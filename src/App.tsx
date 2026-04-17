@@ -286,6 +286,8 @@ const sections = [
   { id: "nps", label: "NPS" },
 ];
 
+const DATA_URL = `${process.env.PUBLIC_URL}/data/boletin-data.json`;
+
 const dataByPeriod = {
   "2026-02": {
     corteMes: "FEBRERO",
@@ -2175,18 +2177,86 @@ function NpsPage({
   );
 }
 
+function AppNotice({ title, message }) {
+  return (
+    <div className="app-shell">
+      <style>{styles}</style>
+      <div className="container" style={{ paddingTop: 64 }}>
+        <PageCard>
+          <div style={{ fontSize: 28, fontWeight: 900, color: "#111" }}>
+            {title}
+          </div>
+          <div
+            style={{
+              marginTop: 12,
+              maxWidth: 760,
+              fontSize: 16,
+              lineHeight: 1.7,
+              color: "#555",
+            }}
+          >
+            {message}
+          </div>
+        </PageCard>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState("ingresos");
   const [compareMode, setCompareMode] = useState(false);
-  const availablePeriods = useMemo(() => Object.keys(dataByPeriod).sort(), []);
-  const defaultPeriod = availablePeriods.includes("2026-02")
-    ? "2026-02"
-    : availablePeriods.length
-    ? availablePeriods[availablePeriods.length - 1]
-    : undefined;
-  const [selectedPeriods, setSelectedPeriods] = useState(
+  const [externalDataByPeriod, setExternalDataByPeriod] = useState<any>(null);
+  const activeDataByPeriod =
+    externalDataByPeriod && Object.keys(externalDataByPeriod).length
+      ? externalDataByPeriod
+      : dataByPeriod;
+  const availablePeriods = useMemo(
+    () => Object.keys(activeDataByPeriod).sort(),
+    [activeDataByPeriod]
+  );
+  const defaultPeriod = useMemo(() => {
+    if (availablePeriods.includes("2026-02")) return "2026-02";
+    if (availablePeriods.length) return availablePeriods[availablePeriods.length - 1];
+    return undefined;
+  }, [availablePeriods]);
+  const [selectedPeriods, setSelectedPeriods] = useState<string[]>(
     defaultPeriod ? [defaultPeriod] : []
   );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadExternalData() {
+      try {
+        const response = await fetch(DATA_URL, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`No se pudo cargar ${DATA_URL} (${response.status}).`);
+        }
+
+        const nextData = await response.json();
+        if (!cancelled && nextData && Object.keys(nextData).length) {
+          setExternalDataByPeriod(nextData);
+        }
+      } catch (error) {
+        console.warn("No se pudieron cargar los datos externos del boletin.", error);
+      }
+    }
+
+    loadExternalData();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    setSelectedPeriods((prev) => {
+      const valid = prev.filter((item) => availablePeriods.includes(item));
+      if (valid.length) return valid;
+      return defaultPeriod ? [defaultPeriod] : [];
+    });
+  }, [availablePeriods, defaultPeriod]);
 
   const primaryPeriod = useMemo(() => {
     if (!selectedPeriods.length)
@@ -2194,9 +2264,13 @@ export default function App() {
     return [...selectedPeriods].sort().slice(-1)[0];
   }, [selectedPeriods, availablePeriods]);
 
-  const data = useMemo(() => dataByPeriod[primaryPeriod], [primaryPeriod]);
+  const data = useMemo(
+    () => (primaryPeriod ? activeDataByPeriod[primaryPeriod] : undefined),
+    [activeDataByPeriod, primaryPeriod]
+  );
 
   const togglePeriod = (period) => {
+    if (!availablePeriods.includes(period)) return;
     setSelectedPeriods((prev) => {
       if (!compareMode) return [period];
       const exists = prev.includes(period);
@@ -2220,6 +2294,24 @@ export default function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
+
+  if (!availablePeriods.length) {
+    return (
+      <AppNotice
+        title="No hay periodos cargados"
+        message="El sitio no encontró información disponible para renderizar el boletín. Revisa el archivo public/data/boletin-data.json o carga el archivo de Excel/CSV en la carpeta data para regenerarlo."
+      />
+    );
+  }
+
+  if (!data) {
+    return (
+      <AppNotice
+        title="El periodo seleccionado no existe"
+        message="La fuente de datos cambió y el periodo activo dejó de estar disponible. Recarga la página o selecciona un periodo válido después de actualizar el archivo del boletín."
+      />
+    );
+  }
 
   return (
     <>

@@ -3,25 +3,64 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main          # Se ejecuta cuando haces push a main
+      - main
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 jobs:
   build:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install spreadsheet dependencies
+        run: python -m pip install --upgrade pip openpyxl
+
+      - name: Sync spreadsheet into JSON
+        run: |
+          if [ -f data/boletin.xlsx ]; then
+            python scripts/sync_spreadsheet_to_json.py data/boletin.xlsx public/data/boletin-data.json
+          elif [ -f data/boletin.csv ]; then
+            python scripts/sync_spreadsheet_to_json.py data/boletin.csv public/data/boletin-data.json
+          else
+            echo "No spreadsheet source found. Keeping committed JSON."
+          fi
+
+      - name: Commit generated JSON
+        run: |
+          if [ -z "$(git status --short -- public/data/boletin-data.json)" ]; then
+            echo "No JSON changes to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/data/boletin-data.json
+            git commit -m "chore: sync boletin data from spreadsheet"
+            git push
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -32,14 +71,16 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'
+          path: ./build
 
   deploy:
+    if: github.actor != 'github-actions[bot]'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

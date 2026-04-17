@@ -1,0 +1,806 @@
+{
+  "2026-02": {
+    "corteMes": "FEBRERO",
+    "corteAnio": "2026",
+    "ingresos": {
+      "cards": [
+        {
+          "title": "Ingresos Agregador",
+          "value": "$787,7 M",
+          "delta": "+ 18,0 % vs ene",
+          "meta": "95,0 % de meta",
+          "deltaTone": "green",
+          "metaTone": "yellow"
+        },
+        {
+          "title": "Ingresos Gateway",
+          "value": "$787,2 M",
+          "subtitle": "Afiliaciones + transacciones",
+          "delta": "+ 40,2 % vs ene",
+          "meta": "95,0 % de meta",
+          "deltaTone": "green",
+          "metaTone": "green"
+        },
+        {
+          "title": "Otras líneas",
+          "value": "$49,6 M",
+          "delta": "- 66,0 % vs ene",
+          "meta": "38,5 % de meta",
+          "deltaTone": "red",
+          "metaTone": "red"
+        },
+        {
+          "title": "Ingreso total",
+          "value": "$1.621,5 M",
+          "delta": "+ 19,2 % vs ene",
+          "meta": "104,9 % de meta",
+          "deltaTone": "green",
+          "metaTone": "green"
+        }
+      ],
+      "summary": {
+        "total": "$1621,5 M",
+        "delta": "+ 19,2%",
+        "cumplimiento": "Cumpl. 104,9%",
+        "ene": "$1360,9 M",
+        "ppto": "$1545,9 M"
+      },
+      "margins": [
+        {
+          "title": "Margen bruto",
+          "real": "$1212,7 M",
+          "ppto": "$924,1 M",
+          "pill": "131,2",
+          "pillTone": "green",
+          "vsText": "+34,9%",
+          "vsTone": "green",
+          "note": "Variación absoluta vs meta: $288,6 M",
+          "series": [
+            {
+              "name": "ENE",
+              "value": 9500
+            },
+            {
+              "name": "FEB REAL",
+              "value": 12000
+            },
+            {
+              "name": "PPTO",
+              "value": 9800
+            }
+          ]
+        },
+        {
+          "title": "Margen EBITDA",
+          "real": "$78,6 M",
+          "ppto": "-$673,1 M",
+          "pill": "111,0 %",
+          "pillTone": "green",
+          "vsText": "-110,1%",
+          "vsTone": "red",
+          "note": "Variación absoluta vs meta: $751,7 M",
+          "series": [
+            {
+              "name": "ENE",
+              "value": 120
+            },
+            {
+              "name": "FEB REAL",
+              "value": 700
+            },
+            {
+              "name": "PPTO",
+              "value": -80
+            }
+          ]
+        },
+        {
+          "title": "Margen neto",
+          "real": "$25,4 M",
+          "ppto": "-$687,3 M",
+          "pill": "103,6 %",
+          "pillTone": "green",
+          "vsText": "-103,2%",
+          "vsTone": "red",
+          "note": "Variación absoluta vs meta: $712,7 M",
+          "series": [
+            {
+              "name": "ENE",
+              "value": -300
+            },
+            {
+              "name": "FEB REAL",
+              "value": 60
+            },
+            {
+              "name": "PPTO",
+              "value": -650
+            }
+          ]
+        }
+      ],
+      "table": [
+        [
+          "Ingresos total",
+          "$1.360,9 M",
+          "$1.442,9 M",
+          "94.3%",
+          "$1.621,5 M",
+          "$1.545,9 M",
+          "104.9%",
+          "192%"
+        ],
+        [
+          "ePayco pagos Agregador",
+          "$667,3 M",
+          "$781,5 M",
+          "85.4%",
+          "$787,7 M",
+          "$828,9 M",
+          "95.0%",
+          "180%"
+        ],
+        [
+          "ePayco pagos Gateway",
+          "$561,4 M",
+          "$586,9 M",
+          "95.7%",
+          "$787,2 M",
+          "$622,6 M",
+          "126.5%",
+          "402%"
+        ],
+        [
+          "ePayco Recaudo",
+          "$50,6 M",
+          "$43,5 M",
+          "116.4%",
+          "$8,0 M",
+          "$46,1 M",
+          "17.4%",
+          "-841%"
+        ],
+        [
+          "Suscripciones",
+          "$5,4 M",
+          "$5,7 M",
+          "93.9%",
+          "$6,0 M",
+          "$6,1 M",
+          "98.5%",
+          "113%"
+        ],
+        [
+          "ePayco Control",
+          "$61,4 M",
+          "$45,2 M",
+          "136.0%",
+          "$26,1 M",
+          "$47,9 M",
+          "54.5%",
+          "-574%"
+        ],
+        [
+          "ePayco Paypal",
+          "$6,7 M",
+          "$7,8 M",
+          "86.0%",
+          "$1,2 M",
+          "$23,7 M",
+          "5.2%",
+          "-815%"
+        ],
+        [
+          "ePayco shops",
+          "$0,2 M",
+          "$0,2 M",
+          "139.1%",
+          "$0,0 M",
+          "$0,2 M",
+          "0.0%",
+          "-1000%"
+        ],
+        [
+          "ePayco PayOuts",
+          "$0,0 M",
+          "$0,1 M",
+          "4.5%",
+          "$0,0 M",
+          "$0,1 M",
+          "4.3%",
+          "0%"
+        ]
+      ]
+    },
+    "vinculacion": {
+      "months": [
+        {
+          "label": "Ene-26",
+          "fact": "Fact. $19,4 M",
+          "activacion": "27%",
+          "registros": "1.796",
+          "vinc": "847",
+          "ccios": "229"
+        },
+        {
+          "label": "Feb-26",
+          "fact": "Fact. $19,4 M",
+          "activacion": "37%",
+          "registros": "2.361",
+          "vinc": "1.308",
+          "ccios": "478"
+        },
+        {
+          "label": "Mar-26",
+          "fact": "Fact. $19,4 M",
+          "activacion": "17%",
+          "registros": "2.905",
+          "vinc": "1.575",
+          "ccios": "268"
+        }
+      ],
+      "agregador": [
+        [
+          "Registros",
+          "1.093",
+          "1.228",
+          "1.528"
+        ],
+        [
+          "Vinculaciones",
+          "156",
+          "190",
+          "222"
+        ],
+        [
+          "Ccios Fact",
+          "229",
+          "478",
+          "268"
+        ],
+        [
+          "% Activación",
+          "50%",
+          "49%",
+          "29%"
+        ]
+      ],
+      "gateway": [
+        [
+          "Registros",
+          "703",
+          "1.133",
+          "1.377"
+        ],
+        [
+          "Vinculaciones",
+          "691",
+          "1.118",
+          "1.353"
+        ],
+        [
+          "Ccios Fact",
+          "151",
+          "385",
+          "204"
+        ],
+        [
+          "% Activación",
+          "22%",
+          "34%",
+          "15%"
+        ]
+      ],
+      "kpiAgregador": [
+        {
+          "title": "#Transacciones",
+          "real": "94,42 mil",
+          "meta": "109,33 mil",
+          "cumplimiento": "86,36%",
+          "realPrev": "97,88 mil",
+          "metaPrev": "103,07 mil",
+          "tone": "red"
+        },
+        {
+          "title": "$ Dinero operado",
+          "real": "$22,55 mil M",
+          "meta": "$27,13 mil M",
+          "cumplimiento": "83,10%",
+          "realPrev": "$23,68 mil M",
+          "metaPrev": "$25,58 mil M",
+          "tone": "red"
+        },
+        {
+          "title": "Ticket promedio",
+          "real": "$238,82 mil",
+          "meta": "$248,20 mil",
+          "cumplimiento": "96,22%",
+          "realPrev": "$241,99 mil",
+          "metaPrev": "$248,20 mil",
+          "tone": "green"
+        },
+        {
+          "title": "Clientes transaccionales",
+          "real": "$2,56 mil",
+          "meta": "3,31 mil",
+          "cumplimiento": "77,39%",
+          "realPrev": "2,54 mil",
+          "metaPrev": "3,12 mil",
+          "tone": "red"
+        }
+      ],
+      "kpiGateway": [
+        {
+          "title": "#Transacciones",
+          "real": "3,18 M",
+          "meta": "4,52 M",
+          "cumplimiento": "70%",
+          "realPrev": "3,47 M",
+          "metaPrev": "4,48 M",
+          "tone": "red"
+        },
+        {
+          "title": "Clientes",
+          "real": "6,82 mil",
+          "meta": "6,36 M",
+          "cumplimiento": "107%",
+          "realPrev": "6,55 mil",
+          "metaPrev": "6,31 mil",
+          "tone": "green"
+        },
+        {
+          "title": "TXR promedio x cliente",
+          "real": "467",
+          "meta": "711",
+          "cumplimiento": "66%",
+          "realPrev": "530",
+          "metaPrev": "711",
+          "tone": "red"
+        }
+      ]
+    },
+    "transaccionales": {
+      "pie": [
+        {
+          "name": "Portafolio Movistar",
+          "value": 35,
+          "color": "#1967e8"
+        },
+        {
+          "name": "Portafolio Wom",
+          "value": 8,
+          "color": "#28105f"
+        },
+        {
+          "name": "Portafolio Davivienda",
+          "value": 38,
+          "color": "#ea2c20"
+        },
+        {
+          "name": "Portafolio General",
+          "value": 16,
+          "color": "#f1d554"
+        },
+        {
+          "name": "Portafolio especial",
+          "value": 3,
+          "color": "#ef7b7b"
+        }
+      ],
+      "values": [
+        [
+          "Portafolio Movistar",
+          "1.075.223"
+        ],
+        [
+          "Portafolio Wom",
+          "231.768"
+        ],
+        [
+          "Portafolio Davivienda",
+          "1.248.848"
+        ],
+        [
+          "Portafolio General",
+          "533.710"
+        ],
+        [
+          "Portafolio especial",
+          "98.515"
+        ]
+      ],
+      "total": "3.188.064",
+      "churnAgregador": {
+        "activos": [
+          {
+            "name": "Ene",
+            "value": 3834
+          },
+          {
+            "name": "Feb",
+            "value": 3649
+          }
+        ],
+        "churn": [
+          {
+            "name": "Ene",
+            "value": 195,
+            "rate": "5,09%"
+          },
+          {
+            "name": "Feb",
+            "value": 185,
+            "rate": "5,07%"
+          }
+        ],
+        "promedioActivos": "3.742",
+        "tasaMes": "5,07%",
+        "promedioChurn": "190"
+      },
+      "churnGateway": {
+        "activos": [
+          {
+            "name": "Ene",
+            "value": 7339
+          },
+          {
+            "name": "Feb",
+            "value": 7412
+          }
+        ],
+        "churn": [
+          {
+            "name": "Ene",
+            "value": 145,
+            "rate": "1,98%"
+          },
+          {
+            "name": "Feb",
+            "value": 73,
+            "rate": "0,98%"
+          }
+        ],
+        "promedioActivos": "7.376",
+        "tasaMes": "0,98%",
+        "promedioChurn": "109"
+      }
+    },
+    "nps": {
+      "metas": [
+        {
+          "title": "Meta NPS",
+          "value": "90",
+          "color": "#ef5a5a"
+        },
+        {
+          "title": "Meta SSA",
+          "value": "90",
+          "color": "#15516f"
+        },
+        {
+          "title": "Meta TEP",
+          "value": "10min",
+          "color": "#20a751"
+        },
+        {
+          "title": "Meta TDP",
+          "value": "4h",
+          "color": "#f1a10a"
+        }
+      ],
+      "months": [
+        {
+          "month": "Enero",
+          "code": "2026-1",
+          "insight": "Inicio del año con NPS y SSA por debajo de meta. TEP aún alto y TDP muy por encima del objetivo.",
+          "metrics": [
+            {
+              "label": "NPS",
+              "value": "32,4",
+              "progress": 36,
+              "color": "#ff1d25",
+              "trend": "-- Base"
+            },
+            {
+              "label": "TEP",
+              "value": "13,0min",
+              "progress": 77,
+              "color": "#20a751",
+              "trend": "-- Base"
+            },
+            {
+              "label": "SSA",
+              "value": "41,3",
+              "progress": 46,
+              "color": "#15516f",
+              "trend": "-- Base"
+            },
+            {
+              "label": "TDP",
+              "value": "41,3",
+              "progress": 15,
+              "color": "#f1a10a",
+              "trend": "-- Base"
+            }
+          ]
+        },
+        {
+          "month": "Febrero",
+          "code": "2026-2",
+          "insight": "Mejora relevante en NPS y SSA. TEP supera meta, pero TDP sigue lejos del objetivo esperado.",
+          "metrics": [
+            {
+              "label": "NPS",
+              "value": "38,5",
+              "progress": 57,
+              "color": "#ff1d25",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TEP",
+              "value": "5,2min",
+              "progress": 159,
+              "color": "#20a751",
+              "trend": "Descendente"
+            },
+            {
+              "label": "SSA",
+              "value": "51,0",
+              "progress": 57,
+              "color": "#15516f",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TDP",
+              "value": "12,2h",
+              "progress": 33,
+              "color": "#f1a10a",
+              "trend": "Descendente"
+            }
+          ]
+        },
+        {
+          "month": "Marzo",
+          "code": "2026-3",
+          "insight": "Continúa la mejora de NPS y SSA. TEP se mantiene sobre meta. TDP mejora, pero aún no cumple el estándar.",
+          "metrics": [
+            {
+              "label": "NPS",
+              "value": "56,5",
+              "progress": 36,
+              "color": "#ff1d25",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TEP",
+              "value": "6,3 min",
+              "progress": 159,
+              "color": "#20a751",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "SSA",
+              "value": "62,5",
+              "progress": 69,
+              "color": "#15516f",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TDP",
+              "value": "24,0h",
+              "progress": 17,
+              "color": "#ff1d25",
+              "trend": "Ascendente"
+            }
+          ]
+        }
+      ],
+      "glossary": [
+        {
+          "dot": "#ff1d25",
+          "title": "NPS",
+          "text": "Net Promoter Score. Mide qué tan dispuestos están los usuarios a recomendar el servicio."
+        },
+        {
+          "dot": "#ff7b7b",
+          "title": "% Cumplimiento NPS",
+          "text": "Porcentaje de avance frente a la meta definida para NPS."
+        },
+        {
+          "dot": "#15516f",
+          "title": "SSA",
+          "text": "Satisfacción del servicio. Refleja el nivel de satisfacción reportado por los usuarios."
+        },
+        {
+          "dot": "#69a8ff",
+          "title": "% Cumplimiento SSA",
+          "text": "Porcentaje de avance frente a la meta definida para SSA."
+        },
+        {
+          "dot": "#20a751",
+          "title": "TEP",
+          "text": "Tiempo de Espera Promedio. Mide cuántos minutos espera en promedio el usuario antes de ser atendido."
+        },
+        {
+          "dot": "#47d96f",
+          "title": "% Cumplimiento TEP",
+          "text": "Porcentaje de cumplimiento frente a la meta de espera. Un valor superior a 100% indica que el tiempo real estuvo mejor que el objetivo."
+        },
+        {
+          "dot": "#f1a10a",
+          "title": "TDP",
+          "text": "Tiempo de Duración Promedio. Mide cuánto dura en promedio la atención o gestión del caso."
+        },
+        {
+          "dot": "#f6bf30",
+          "title": "% Cumplimiento TDP",
+          "text": "Porcentaje de cumplimiento frente a la meta de duración promedio."
+        }
+      ]
+    }
+  },
+  "2026-03": {
+    "corteMes": "MARZO",
+    "corteAnio": "2026",
+    "ingresos": {
+      "cards": [],
+      "summary": {},
+      "margins": [],
+      "table": []
+    },
+    "vinculacion": {
+      "months": [],
+      "agregador": [],
+      "gateway": [],
+      "kpiAgregador": [],
+      "kpiGateway": []
+    },
+    "transaccionales": {
+      "pie": [],
+      "values": [],
+      "total": "",
+      "churnAgregador": {
+        "activos": [],
+        "churn": [],
+        "promedioActivos": "",
+        "tasaMes": "",
+        "promedioChurn": ""
+      },
+      "churnGateway": {
+        "activos": [],
+        "churn": [],
+        "promedioActivos": "",
+        "tasaMes": "",
+        "promedioChurn": ""
+      }
+    },
+    "nps": {
+      "metas": [
+        {
+          "title": "Meta NPS",
+          "value": "90",
+          "color": "#ef5a5a"
+        },
+        {
+          "title": "Meta SSA",
+          "value": "90",
+          "color": "#15516f"
+        },
+        {
+          "title": "Meta TEP",
+          "value": "10min",
+          "color": "#20a751"
+        },
+        {
+          "title": "Meta TDP",
+          "value": "4h",
+          "color": "#f1a10a"
+        }
+      ],
+      "months": [
+        {
+          "month": "Febrero",
+          "code": "2026-2",
+          "insight": "Mejora relevante en NPS y SSA. TEP supera meta, pero TDP sigue lejos del objetivo esperado.",
+          "metrics": [
+            {
+              "label": "NPS",
+              "value": "38,5",
+              "progress": 57,
+              "color": "#ff1d25",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TEP",
+              "value": "5,2min",
+              "progress": 159,
+              "color": "#20a751",
+              "trend": "Descendente"
+            },
+            {
+              "label": "SSA",
+              "value": "51,0",
+              "progress": 57,
+              "color": "#15516f",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TDP",
+              "value": "12,2h",
+              "progress": 33,
+              "color": "#f1a10a",
+              "trend": "Descendente"
+            }
+          ]
+        },
+        {
+          "month": "Marzo",
+          "code": "2026-3",
+          "insight": "Continúa la mejora de NPS y SSA. TEP se mantiene sobre meta. TDP mejora, pero aún no cumple el estándar.",
+          "metrics": [
+            {
+              "label": "NPS",
+              "value": "56,5",
+              "progress": 63,
+              "color": "#ff1d25",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TEP",
+              "value": "6,3 min",
+              "progress": 159,
+              "color": "#20a751",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "SSA",
+              "value": "62,5",
+              "progress": 69,
+              "color": "#15516f",
+              "trend": "Ascendente"
+            },
+            {
+              "label": "TDP",
+              "value": "24,0h",
+              "progress": 17,
+              "color": "#ff1d25",
+              "trend": "Ascendente"
+            }
+          ]
+        }
+      ],
+      "glossary": [
+        {
+          "dot": "#ff1d25",
+          "title": "NPS",
+          "text": "Net Promoter Score. Mide qué tan dispuestos están los usuarios a recomendar el servicio."
+        },
+        {
+          "dot": "#ff7b7b",
+          "title": "% Cumplimiento NPS",
+          "text": "Porcentaje de avance frente a la meta definida para NPS."
+        },
+        {
+          "dot": "#15516f",
+          "title": "SSA",
+          "text": "Satisfacción del servicio. Refleja el nivel de satisfacción reportado por los usuarios."
+        },
+        {
+          "dot": "#69a8ff",
+          "title": "% Cumplimiento SSA",
+          "text": "Porcentaje de avance frente a la meta definida para SSA."
+        },
+        {
+          "dot": "#20a751",
+          "title": "TEP",
+          "text": "Tiempo de Espera Promedio."
+        },
+        {
+          "dot": "#f1a10a",
+          "title": "TDP",
+          "text": "Tiempo de Duración Promedio."
+        }
+      ]
+    }
+  }
+}
