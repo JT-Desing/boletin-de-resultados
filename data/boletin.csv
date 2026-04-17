@@ -152,49 +152,35 @@ period,path,type,value
 2026-02,vinculacion.months[0].vinc,string,847
 2026-02,vinculacion.months[0].ccios,string,229
 2026-02,vinculacion.months[1].label,string,Feb-26
-2026-02,vinculacion.months[1].fact,string,"Fact. $19,4 M"
+2026-02,vinculacion.months[1].fact,string,"Fact. $27,3 M"
 2026-02,vinculacion.months[1].activacion,string,37%
 2026-02,vinculacion.months[1].registros,string,2.361
 2026-02,vinculacion.months[1].vinc,string,1.308
 2026-02,vinculacion.months[1].ccios,string,478
-2026-02,vinculacion.months[2].label,string,Mar-26
-2026-02,vinculacion.months[2].fact,string,"Fact. $19,4 M"
-2026-02,vinculacion.months[2].activacion,string,17%
-2026-02,vinculacion.months[2].registros,string,2.905
-2026-02,vinculacion.months[2].vinc,string,1.575
-2026-02,vinculacion.months[2].ccios,string,268
 2026-02,vinculacion.agregador[0][0],string,Registros
 2026-02,vinculacion.agregador[0][1],string,1.093
 2026-02,vinculacion.agregador[0][2],string,1.228
-2026-02,vinculacion.agregador[0][3],string,1.528
 2026-02,vinculacion.agregador[1][0],string,Vinculaciones
 2026-02,vinculacion.agregador[1][1],string,156
 2026-02,vinculacion.agregador[1][2],string,190
-2026-02,vinculacion.agregador[1][3],string,222
 2026-02,vinculacion.agregador[2][0],string,Ccios Fact
 2026-02,vinculacion.agregador[2][1],string,229
 2026-02,vinculacion.agregador[2][2],string,478
-2026-02,vinculacion.agregador[2][3],string,268
 2026-02,vinculacion.agregador[3][0],string,% Activación
 2026-02,vinculacion.agregador[3][1],string,50%
 2026-02,vinculacion.agregador[3][2],string,49%
-2026-02,vinculacion.agregador[3][3],string,29%
 2026-02,vinculacion.gateway[0][0],string,Registros
 2026-02,vinculacion.gateway[0][1],string,703
 2026-02,vinculacion.gateway[0][2],string,1.133
-2026-02,vinculacion.gateway[0][3],string,1.377
 2026-02,vinculacion.gateway[1][0],string,Vinculaciones
 2026-02,vinculacion.gateway[1][1],string,691
 2026-02,vinculacion.gateway[1][2],string,1.118
-2026-02,vinculacion.gateway[1][3],string,1.353
 2026-02,vinculacion.gateway[2][0],string,Ccios Fact
 2026-02,vinculacion.gateway[2][1],string,151
 2026-02,vinculacion.gateway[2][2],string,385
-2026-02,vinculacion.gateway[2][3],string,204
 2026-02,vinculacion.gateway[3][0],string,% Activación
 2026-02,vinculacion.gateway[3][1],string,22%
 2026-02,vinculacion.gateway[3][2],string,34%
-2026-02,vinculacion.gateway[3][3],string,15%
 2026-02,vinculacion.kpiAgregador[0].title,string,#Transacciones
 2026-02,vinculacion.kpiAgregador[0].real,string,"94,42 mil"
 2026-02,vinculacion.kpiAgregador[0].meta,string,"109,33 mil"
@@ -280,11 +266,14 @@ period,path,type,value
 2026-02,transaccionales.churnAgregador.churn[1].name,string,Feb
 2026-02,transaccionales.churnAgregador.churn[1].value,number,185
 2026-02,transaccionales.churnAgregador.churn[1].rate,string,"5,07%"
-2026-02,transaccionales.churnAgregador.nuevos,json,[]
+2026-02,transaccionales.churnAgregador.nuevos[0].name,string,Ene
+2026-02,transaccionales.churnAgregador.nuevos[0].value,number,50
+2026-02,transaccionales.churnAgregador.nuevos[1].name,string,Feb
+2026-02,transaccionales.churnAgregador.nuevos[1].value,number,91
 2026-02,transaccionales.churnAgregador.promedioActivos,string,3.742
 2026-02,transaccionales.churnAgregador.tasaMes,string,"5,07%"
 2026-02,transaccionales.churnAgregador.promedioChurn,string,190
-2026-02,transaccionales.churnAgregador.promedioNuevos,string,
+2026-02,transaccionales.churnAgregador.promedioNuevos,string,71
 2026-02,transaccionales.churnGateway.activos[0].name,string,Ene
 2026-02,transaccionales.churnGateway.activos[0].value,number,7339
 2026-02,transaccionales.churnGateway.activos[1].name,string,Feb
@@ -295,11 +284,14 @@ period,path,type,value
 2026-02,transaccionales.churnGateway.churn[1].name,string,Feb
 2026-02,transaccionales.churnGateway.churn[1].value,number,73
 2026-02,transaccionales.churnGateway.churn[1].rate,string,"0,98%"
-2026-02,transaccionales.churnGateway.nuevos,json,[]
+2026-02,transaccionales.churnGateway.nuevos[0].name,string,Ene
+2026-02,transaccionales.churnGateway.nuevos[0].value,number,120
+2026-02,transaccionales.churnGateway.nuevos[1].name,string,Feb
+2026-02,transaccionales.churnGateway.nuevos[1].value,number,343
 2026-02,transaccionales.churnGateway.promedioActivos,string,7.376
 2026-02,transaccionales.churnGateway.tasaMes,string,"0,98%"
 2026-02,transaccionales.churnGateway.promedioChurn,string,109
-2026-02,transaccionales.churnGateway.promedioNuevos,string,
+2026-02,transaccionales.churnGateway.promedioNuevos,string,232
 2026-02,nps.metas[0].title,string,Meta NPS
 2026-02,nps.metas[0].value,string,90
 2026-02,nps.metas[0].color,string,#ef5a5a
@@ -418,13 +410,13 @@ period,path,type,value
 2026-03,vinculacion.months[0].vinc,string,847
 2026-03,vinculacion.months[0].ccios,string,229
 2026-03,vinculacion.months[1].label,string,Feb-26
-2026-03,vinculacion.months[1].fact,string,"Fact. $19,4 M"
+2026-03,vinculacion.months[1].fact,string,"Fact. $27,3 M"
 2026-03,vinculacion.months[1].activacion,string,37%
 2026-03,vinculacion.months[1].registros,string,2.361
 2026-03,vinculacion.months[1].vinc,string,1.308
 2026-03,vinculacion.months[1].ccios,string,478
 2026-03,vinculacion.months[2].label,string,Mar-26
-2026-03,vinculacion.months[2].fact,string,"Fact. $19,4 M"
+2026-03,vinculacion.months[2].fact,string,"Fact. $27,4 M"
 2026-03,vinculacion.months[2].activacion,string,17%
 2026-03,vinculacion.months[2].registros,string,2.905
 2026-03,vinculacion.months[2].vinc,string,1.575
@@ -536,20 +528,56 @@ period,path,type,value
 2026-03,transaccionales.values[4][0],string,Portafolio especial
 2026-03,transaccionales.values[4][1],string,121.492
 2026-03,transaccionales.total,string,3.428.549
-2026-03,transaccionales.churnAgregador.activos,json,[]
-2026-03,transaccionales.churnAgregador.churn,json,[]
-2026-03,transaccionales.churnAgregador.nuevos,json,[]
-2026-03,transaccionales.churnAgregador.promedioActivos,string,
-2026-03,transaccionales.churnAgregador.tasaMes,string,
-2026-03,transaccionales.churnAgregador.promedioChurn,string,
-2026-03,transaccionales.churnAgregador.promedioNuevos,string,
-2026-03,transaccionales.churnGateway.activos,json,[]
-2026-03,transaccionales.churnGateway.churn,json,[]
-2026-03,transaccionales.churnGateway.nuevos,json,[]
-2026-03,transaccionales.churnGateway.promedioActivos,string,
-2026-03,transaccionales.churnGateway.tasaMes,string,
-2026-03,transaccionales.churnGateway.promedioChurn,string,
-2026-03,transaccionales.churnGateway.promedioNuevos,string,
+2026-03,transaccionales.churnAgregador.activos[0].name,string,Ene
+2026-03,transaccionales.churnAgregador.activos[0].value,number,3834
+2026-03,transaccionales.churnAgregador.activos[1].name,string,Feb
+2026-03,transaccionales.churnAgregador.activos[1].value,number,3649
+2026-03,transaccionales.churnAgregador.activos[2].name,string,Mar
+2026-03,transaccionales.churnAgregador.activos[2].value,number,3416
+2026-03,transaccionales.churnAgregador.churn[0].name,string,Ene
+2026-03,transaccionales.churnAgregador.churn[0].value,number,195
+2026-03,transaccionales.churnAgregador.churn[0].rate,string,"5,09%"
+2026-03,transaccionales.churnAgregador.churn[1].name,string,Feb
+2026-03,transaccionales.churnAgregador.churn[1].value,number,185
+2026-03,transaccionales.churnAgregador.churn[1].rate,string,"5,07%"
+2026-03,transaccionales.churnAgregador.churn[2].name,string,Mar
+2026-03,transaccionales.churnAgregador.churn[2].value,number,229
+2026-03,transaccionales.churnAgregador.churn[2].rate,string,"6,70%"
+2026-03,transaccionales.churnAgregador.nuevos[0].name,string,Ene
+2026-03,transaccionales.churnAgregador.nuevos[0].value,number,50
+2026-03,transaccionales.churnAgregador.nuevos[1].name,string,Feb
+2026-03,transaccionales.churnAgregador.nuevos[1].value,number,91
+2026-03,transaccionales.churnAgregador.nuevos[2].name,string,Mar
+2026-03,transaccionales.churnAgregador.nuevos[2].value,number,91
+2026-03,transaccionales.churnAgregador.promedioActivos,string,3.633
+2026-03,transaccionales.churnAgregador.tasaMes,string,"6,70%"
+2026-03,transaccionales.churnAgregador.promedioChurn,string,203
+2026-03,transaccionales.churnAgregador.promedioNuevos,string,77
+2026-03,transaccionales.churnGateway.activos[0].name,string,Ene
+2026-03,transaccionales.churnGateway.activos[0].value,number,7339
+2026-03,transaccionales.churnGateway.activos[1].name,string,Feb
+2026-03,transaccionales.churnGateway.activos[1].value,number,7412
+2026-03,transaccionales.churnGateway.activos[2].name,string,Mar
+2026-03,transaccionales.churnGateway.activos[2].value,number,7556
+2026-03,transaccionales.churnGateway.churn[0].name,string,Ene
+2026-03,transaccionales.churnGateway.churn[0].value,number,145
+2026-03,transaccionales.churnGateway.churn[0].rate,string,"1,98%"
+2026-03,transaccionales.churnGateway.churn[1].name,string,Feb
+2026-03,transaccionales.churnGateway.churn[1].value,number,73
+2026-03,transaccionales.churnGateway.churn[1].rate,string,"0,98%"
+2026-03,transaccionales.churnGateway.churn[2].name,string,Mar
+2026-03,transaccionales.churnGateway.churn[2].value,number,144
+2026-03,transaccionales.churnGateway.churn[2].rate,string,"1,91%"
+2026-03,transaccionales.churnGateway.nuevos[0].name,string,Ene
+2026-03,transaccionales.churnGateway.nuevos[0].value,number,120
+2026-03,transaccionales.churnGateway.nuevos[1].name,string,Feb
+2026-03,transaccionales.churnGateway.nuevos[1].value,number,343
+2026-03,transaccionales.churnGateway.nuevos[2].name,string,Mar
+2026-03,transaccionales.churnGateway.nuevos[2].value,number,267
+2026-03,transaccionales.churnGateway.promedioActivos,string,7.436
+2026-03,transaccionales.churnGateway.tasaMes,string,"1,91%"
+2026-03,transaccionales.churnGateway.promedioChurn,string,121
+2026-03,transaccionales.churnGateway.promedioNuevos,string,243
 2026-03,nps.metas[0].title,string,Meta NPS
 2026-03,nps.metas[0].value,string,90
 2026-03,nps.metas[0].color,string,#ef5a5a

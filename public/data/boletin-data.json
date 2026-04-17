@@ -224,71 +224,55 @@
         },
         {
           "label": "Feb-26",
-          "fact": "Fact. $19,4 M",
+          "fact": "Fact. $27,3 M",
           "activacion": "37%",
           "registros": "2.361",
           "vinc": "1.308",
           "ccios": "478"
-        },
-        {
-          "label": "Mar-26",
-          "fact": "Fact. $19,4 M",
-          "activacion": "17%",
-          "registros": "2.905",
-          "vinc": "1.575",
-          "ccios": "268"
         }
       ],
       "agregador": [
         [
           "Registros",
           "1.093",
-          "1.228",
-          "1.528"
+          "1.228"
         ],
         [
           "Vinculaciones",
           "156",
-          "190",
-          "222"
+          "190"
         ],
         [
           "Ccios Fact",
           "229",
-          "478",
-          "268"
+          "478"
         ],
         [
           "% Activación",
           "50%",
-          "49%",
-          "29%"
+          "49%"
         ]
       ],
       "gateway": [
         [
           "Registros",
           "703",
-          "1.133",
-          "1.377"
+          "1.133"
         ],
         [
           "Vinculaciones",
           "691",
-          "1.118",
-          "1.353"
+          "1.118"
         ],
         [
           "Ccios Fact",
           "151",
-          "385",
-          "204"
+          "385"
         ],
         [
           "% Activación",
           "22%",
-          "34%",
-          "15%"
+          "34%"
         ]
       ],
       "kpiAgregador": [
@@ -433,11 +417,20 @@
             "rate": "5,07%"
           }
         ],
-        "nuevos": [],
+        "nuevos": [
+          {
+            "name": "Ene",
+            "value": 50
+          },
+          {
+            "name": "Feb",
+            "value": 91
+          }
+        ],
         "promedioActivos": "3.742",
         "tasaMes": "5,07%",
         "promedioChurn": "190",
-        "promedioNuevos": ""
+        "promedioNuevos": "71"
       },
       "churnGateway": {
         "activos": [
@@ -462,11 +455,20 @@
             "rate": "0,98%"
           }
         ],
-        "nuevos": [],
+        "nuevos": [
+          {
+            "name": "Ene",
+            "value": 120
+          },
+          {
+            "name": "Feb",
+            "value": 343
+          }
+        ],
         "promedioActivos": "7.376",
         "tasaMes": "0,98%",
         "promedioChurn": "109",
-        "promedioNuevos": ""
+        "promedioNuevos": "232"
       }
     },
     "nps": {
@@ -664,7 +666,7 @@
         },
         {
           "label": "Feb-26",
-          "fact": "Fact. $19,4 M",
+          "fact": "Fact. $27,3 M",
           "activacion": "37%",
           "registros": "2.361",
           "vinc": "1.308",
@@ -672,7 +674,7 @@
         },
         {
           "label": "Mar-26",
-          "fact": "Fact. $19,4 M",
+          "fact": "Fact. $27,4 M",
           "activacion": "17%",
           "registros": "2.905",
           "vinc": "1.575",
@@ -851,22 +853,106 @@
       ],
       "total": "3.428.549",
       "churnAgregador": {
-        "activos": [],
-        "churn": [],
-        "nuevos": [],
-        "promedioActivos": "",
-        "tasaMes": "",
-        "promedioChurn": "",
-        "promedioNuevos": ""
+        "activos": [
+          {
+            "name": "Ene",
+            "value": 3834
+          },
+          {
+            "name": "Feb",
+            "value": 3649
+          },
+          {
+            "name": "Mar",
+            "value": 3416
+          }
+        ],
+        "churn": [
+          {
+            "name": "Ene",
+            "value": 195,
+            "rate": "5,09%"
+          },
+          {
+            "name": "Feb",
+            "value": 185,
+            "rate": "5,07%"
+          },
+          {
+            "name": "Mar",
+            "value": 229,
+            "rate": "6,70%"
+          }
+        ],
+        "nuevos": [
+          {
+            "name": "Ene",
+            "value": 50
+          },
+          {
+            "name": "Feb",
+            "value": 91
+          },
+          {
+            "name": "Mar",
+            "value": 91
+          }
+        ],
+        "promedioActivos": "3.633",
+        "tasaMes": "6,70%",
+        "promedioChurn": "203",
+        "promedioNuevos": "77"
       },
       "churnGateway": {
-        "activos": [],
-        "churn": [],
-        "nuevos": [],
-        "promedioActivos": "",
-        "tasaMes": "",
-        "promedioChurn": "",
-        "promedioNuevos": ""
+        "activos": [
+          {
+            "name": "Ene",
+            "value": 7339
+          },
+          {
+            "name": "Feb",
+            "value": 7412
+          },
+          {
+            "name": "Mar",
+            "value": 7556
+          }
+        ],
+        "churn": [
+          {
+            "name": "Ene",
+            "value": 145,
+            "rate": "1,98%"
+          },
+          {
+            "name": "Feb",
+            "value": 73,
+            "rate": "0,98%"
+          },
+          {
+            "name": "Mar",
+            "value": 144,
+            "rate": "1,91%"
+          }
+        ],
+        "nuevos": [
+          {
+            "name": "Ene",
+            "value": 120
+          },
+          {
+            "name": "Feb",
+            "value": 343
+          },
+          {
+            "name": "Mar",
+            "value": 267
+          }
+        ],
+        "promedioActivos": "7.436",
+        "tasaMes": "1,91%",
+        "promedioChurn": "121",
+        "promedioNuevos": "243"
       }
     },
     "nps": {
