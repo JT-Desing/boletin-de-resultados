@@ -1677,7 +1677,6 @@ function EmptyChartPanel({ title, color, message }) {
 
 function ChurnCard({ title, dataset, topColor, bottomColor }) {
   const promedioActivos = dataset?.promedioActivos || "--";
-  const tasaMes = dataset?.tasaMes || "--";
   const promedioChurn = dataset?.promedioChurn || "--";
   const promedioNuevos = dataset?.promedioNuevos || "--";
   if (false) {
@@ -1771,10 +1770,6 @@ function ChurnCard({ title, dataset, topColor, bottomColor }) {
               Promedio de clientes activos
             </div>
             <div className="metric-side-value">{promedioActivos}</div>
-          </div>
-          <div className="metric-side-chip">
-            <div className="top">Tasa % mes</div>
-            <div className="bottom">{tasaMes}</div>
           </div>
           <div className="metric-side-box hover-card">
             <div className="metric-side-label">Promedio de Churn clientes</div>
