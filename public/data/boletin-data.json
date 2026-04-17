@@ -321,7 +321,7 @@
         },
         {
           "title": "Clientes transaccionales",
-          "real": "$2,56 mil",
+          "real": "2,56 mil",
           "meta": "3,31 mil",
           "cumplimiento": "77,39%",
           "realPrev": "2,54 mil",
@@ -342,7 +342,7 @@
         {
           "title": "Clientes",
           "real": "6,82 mil",
-          "meta": "6,36 M",
+          "meta": "6,36 mil",
           "cumplimiento": "107%",
           "realPrev": "6,55 mil",
           "metaPrev": "6,31 mil",
@@ -433,9 +433,11 @@
             "rate": "5,07%"
           }
         ],
+        "nuevos": [],
         "promedioActivos": "3.742",
         "tasaMes": "5,07%",
-        "promedioChurn": "190"
+        "promedioChurn": "190",
+        "promedioNuevos": ""
       },
       "churnGateway": {
         "activos": [
@@ -460,9 +462,11 @@
             "rate": "0,98%"
           }
         ],
+        "nuevos": [],
         "promedioActivos": "7.376",
         "tasaMes": "0,98%",
-        "promedioChurn": "109"
+        "promedioChurn": "109",
+        "promedioNuevos": ""
       }
     },
     "nps": {
@@ -649,29 +653,220 @@
       "table": []
     },
     "vinculacion": {
-      "months": [],
-      "agregador": [],
-      "gateway": [],
-      "kpiAgregador": [],
-      "kpiGateway": []
+      "months": [
+        {
+          "label": "Ene-26",
+          "fact": "Fact. $19,4 M",
+          "activacion": "27%",
+          "registros": "1.796",
+          "vinc": "847",
+          "ccios": "229"
+        },
+        {
+          "label": "Feb-26",
+          "fact": "Fact. $19,4 M",
+          "activacion": "37%",
+          "registros": "2.361",
+          "vinc": "1.308",
+          "ccios": "478"
+        },
+        {
+          "label": "Mar-26",
+          "fact": "Fact. $19,4 M",
+          "activacion": "17%",
+          "registros": "2.905",
+          "vinc": "1.575",
+          "ccios": "268"
+        }
+      ],
+      "agregador": [
+        [
+          "Registros",
+          "1.093",
+          "1.228",
+          "1.528"
+        ],
+        [
+          "Vinculaciones",
+          "156",
+          "190",
+          "222"
+        ],
+        [
+          "Ccios Fact",
+          "229",
+          "478",
+          "268"
+        ],
+        [
+          "% Activación",
+          "50%",
+          "49%",
+          "29%"
+        ]
+      ],
+      "gateway": [
+        [
+          "Registros",
+          "703",
+          "1.133",
+          "1.377"
+        ],
+        [
+          "Vinculaciones",
+          "691",
+          "1.118",
+          "1.353"
+        ],
+        [
+          "Ccios Fact",
+          "151",
+          "385",
+          "204"
+        ],
+        [
+          "% Activación",
+          "22%",
+          "34%",
+          "15%"
+        ]
+      ],
+      "kpiAgregador": [
+        {
+          "title": "#Transacciones",
+          "real": "100,18 mil",
+          "meta": "113,99 mil",
+          "cumplimiento": "87,89%",
+          "realPrev": "94,42 mil",
+          "metaPrev": "109,33 mil",
+          "tone": "red"
+        },
+        {
+          "title": "$ Dinero operado",
+          "real": "$23,94 mil M",
+          "meta": "$28,29 mil M",
+          "cumplimiento": "84,62%",
+          "realPrev": "$22,55 mil M",
+          "metaPrev": "$27,13 mil M",
+          "tone": "red"
+        },
+        {
+          "title": "Ticket promedio",
+          "real": "$238,97 mil",
+          "meta": "$248,20 mil",
+          "cumplimiento": "96,28%",
+          "realPrev": "$238,82 mil",
+          "metaPrev": "$248,20 mil",
+          "tone": "green"
+        },
+        {
+          "title": "Clientes transaccionales",
+          "real": "2,61 mil",
+          "meta": "3,45 mil",
+          "cumplimiento": "75,67%",
+          "realPrev": "2,56 mil",
+          "metaPrev": "3,31 mil",
+          "tone": "red"
+        }
+      ],
+      "kpiGateway": [
+        {
+          "title": "#Transacciones",
+          "real": "3,42 M",
+          "meta": "4,63 M",
+          "cumplimiento": "74%",
+          "realPrev": "3,18 M",
+          "metaPrev": "4,52 M",
+          "tone": "red"
+        },
+        {
+          "title": "Clientes",
+          "real": "6,87 mil",
+          "meta": "6,51 mil",
+          "cumplimiento": "106%",
+          "realPrev": "6,82 mil",
+          "metaPrev": "6,36 mil",
+          "tone": "green"
+        },
+        {
+          "title": "TXR promedio x cliente",
+          "real": "499",
+          "meta": "711",
+          "cumplimiento": "70%",
+          "realPrev": "467",
+          "metaPrev": "711",
+          "tone": "red"
+        }
+      ]
     },
     "transaccionales": {
-      "pie": [],
-      "values": [],
-      "total": "",
+      "pie": [
+        {
+          "name": "Portafolio Movistar",
+          "value": 30.6,
+          "color": "#1967e8"
+        },
+        {
+          "name": "Portafolio Wom",
+          "value": 7.1,
+          "color": "#28105f"
+        },
+        {
+          "name": "Portafolio Davivienda",
+          "value": 40.8,
+          "color": "#ea2c20"
+        },
+        {
+          "name": "Portafolio General",
+          "value": 18,
+          "color": "#f1d554"
+        },
+        {
+          "name": "Portafolio especial",
+          "value": 3.5,
+          "color": "#ef7b7b"
+        }
+      ],
+      "values": [
+        [
+          "Portafolio Movistar",
+          "1.047.715"
+        ],
+        [
+          "Portafolio Wom",
+          "244.511"
+        ],
+        [
+          "Portafolio Davivienda",
+          "1.398.107"
+        ],
+        [
+          "Portafolio General",
+          "616.724"
+        ],
+        [
+          "Portafolio especial",
+          "121.492"
+        ]
+      ],
+      "total": "3.428.549",
       "churnAgregador": {
         "activos": [],
         "churn": [],
+        "nuevos": [],
         "promedioActivos": "",
         "tasaMes": "",
-        "promedioChurn": ""
+        "promedioChurn": "",
+        "promedioNuevos": ""
       },
       "churnGateway": {
         "activos": [],
         "churn": [],
+        "nuevos": [],
         "promedioActivos": "",
         "tasaMes": "",
-        "promedioChurn": ""
+        "promedioChurn": "",
+        "promedioNuevos": ""
       }
     },
     "nps": {

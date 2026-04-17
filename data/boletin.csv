@@ -217,7 +217,7 @@ period,path,type,value
 2026-02,vinculacion.kpiAgregador[2].metaPrev,string,"$248,20 mil"
 2026-02,vinculacion.kpiAgregador[2].tone,string,green
 2026-02,vinculacion.kpiAgregador[3].title,string,Clientes transaccionales
-2026-02,vinculacion.kpiAgregador[3].real,string,"$2,56 mil"
+2026-02,vinculacion.kpiAgregador[3].real,string,"2,56 mil"
 2026-02,vinculacion.kpiAgregador[3].meta,string,"3,31 mil"
 2026-02,vinculacion.kpiAgregador[3].cumplimiento,string,"77,39%"
 2026-02,vinculacion.kpiAgregador[3].realPrev,string,"2,54 mil"
@@ -232,7 +232,7 @@ period,path,type,value
 2026-02,vinculacion.kpiGateway[0].tone,string,red
 2026-02,vinculacion.kpiGateway[1].title,string,Clientes
 2026-02,vinculacion.kpiGateway[1].real,string,"6,82 mil"
-2026-02,vinculacion.kpiGateway[1].meta,string,"6,36 M"
+2026-02,vinculacion.kpiGateway[1].meta,string,"6,36 mil"
 2026-02,vinculacion.kpiGateway[1].cumplimiento,string,107%
 2026-02,vinculacion.kpiGateway[1].realPrev,string,"6,55 mil"
 2026-02,vinculacion.kpiGateway[1].metaPrev,string,"6,31 mil"
@@ -280,9 +280,11 @@ period,path,type,value
 2026-02,transaccionales.churnAgregador.churn[1].name,string,Feb
 2026-02,transaccionales.churnAgregador.churn[1].value,number,185
 2026-02,transaccionales.churnAgregador.churn[1].rate,string,"5,07%"
+2026-02,transaccionales.churnAgregador.nuevos,json,[]
 2026-02,transaccionales.churnAgregador.promedioActivos,string,3.742
 2026-02,transaccionales.churnAgregador.tasaMes,string,"5,07%"
 2026-02,transaccionales.churnAgregador.promedioChurn,string,190
+2026-02,transaccionales.churnAgregador.promedioNuevos,string,
 2026-02,transaccionales.churnGateway.activos[0].name,string,Ene
 2026-02,transaccionales.churnGateway.activos[0].value,number,7339
 2026-02,transaccionales.churnGateway.activos[1].name,string,Feb
@@ -293,9 +295,11 @@ period,path,type,value
 2026-02,transaccionales.churnGateway.churn[1].name,string,Feb
 2026-02,transaccionales.churnGateway.churn[1].value,number,73
 2026-02,transaccionales.churnGateway.churn[1].rate,string,"0,98%"
+2026-02,transaccionales.churnGateway.nuevos,json,[]
 2026-02,transaccionales.churnGateway.promedioActivos,string,7.376
 2026-02,transaccionales.churnGateway.tasaMes,string,"0,98%"
 2026-02,transaccionales.churnGateway.promedioChurn,string,109
+2026-02,transaccionales.churnGateway.promedioNuevos,string,
 2026-02,nps.metas[0].title,string,Meta NPS
 2026-02,nps.metas[0].value,string,90
 2026-02,nps.metas[0].color,string,#ef5a5a
@@ -407,24 +411,145 @@ period,path,type,value
 2026-03,ingresos.summary,json,{}
 2026-03,ingresos.margins,json,[]
 2026-03,ingresos.table,json,[]
-2026-03,vinculacion.months,json,[]
-2026-03,vinculacion.agregador,json,[]
-2026-03,vinculacion.gateway,json,[]
-2026-03,vinculacion.kpiAgregador,json,[]
-2026-03,vinculacion.kpiGateway,json,[]
-2026-03,transaccionales.pie,json,[]
-2026-03,transaccionales.values,json,[]
-2026-03,transaccionales.total,string,
+2026-03,vinculacion.months[0].label,string,Ene-26
+2026-03,vinculacion.months[0].fact,string,"Fact. $19,4 M"
+2026-03,vinculacion.months[0].activacion,string,27%
+2026-03,vinculacion.months[0].registros,string,1.796
+2026-03,vinculacion.months[0].vinc,string,847
+2026-03,vinculacion.months[0].ccios,string,229
+2026-03,vinculacion.months[1].label,string,Feb-26
+2026-03,vinculacion.months[1].fact,string,"Fact. $19,4 M"
+2026-03,vinculacion.months[1].activacion,string,37%
+2026-03,vinculacion.months[1].registros,string,2.361
+2026-03,vinculacion.months[1].vinc,string,1.308
+2026-03,vinculacion.months[1].ccios,string,478
+2026-03,vinculacion.months[2].label,string,Mar-26
+2026-03,vinculacion.months[2].fact,string,"Fact. $19,4 M"
+2026-03,vinculacion.months[2].activacion,string,17%
+2026-03,vinculacion.months[2].registros,string,2.905
+2026-03,vinculacion.months[2].vinc,string,1.575
+2026-03,vinculacion.months[2].ccios,string,268
+2026-03,vinculacion.agregador[0][0],string,Registros
+2026-03,vinculacion.agregador[0][1],string,1.093
+2026-03,vinculacion.agregador[0][2],string,1.228
+2026-03,vinculacion.agregador[0][3],string,1.528
+2026-03,vinculacion.agregador[1][0],string,Vinculaciones
+2026-03,vinculacion.agregador[1][1],string,156
+2026-03,vinculacion.agregador[1][2],string,190
+2026-03,vinculacion.agregador[1][3],string,222
+2026-03,vinculacion.agregador[2][0],string,Ccios Fact
+2026-03,vinculacion.agregador[2][1],string,229
+2026-03,vinculacion.agregador[2][2],string,478
+2026-03,vinculacion.agregador[2][3],string,268
+2026-03,vinculacion.agregador[3][0],string,% Activación
+2026-03,vinculacion.agregador[3][1],string,50%
+2026-03,vinculacion.agregador[3][2],string,49%
+2026-03,vinculacion.agregador[3][3],string,29%
+2026-03,vinculacion.gateway[0][0],string,Registros
+2026-03,vinculacion.gateway[0][1],string,703
+2026-03,vinculacion.gateway[0][2],string,1.133
+2026-03,vinculacion.gateway[0][3],string,1.377
+2026-03,vinculacion.gateway[1][0],string,Vinculaciones
+2026-03,vinculacion.gateway[1][1],string,691
+2026-03,vinculacion.gateway[1][2],string,1.118
+2026-03,vinculacion.gateway[1][3],string,1.353
+2026-03,vinculacion.gateway[2][0],string,Ccios Fact
+2026-03,vinculacion.gateway[2][1],string,151
+2026-03,vinculacion.gateway[2][2],string,385
+2026-03,vinculacion.gateway[2][3],string,204
+2026-03,vinculacion.gateway[3][0],string,% Activación
+2026-03,vinculacion.gateway[3][1],string,22%
+2026-03,vinculacion.gateway[3][2],string,34%
+2026-03,vinculacion.gateway[3][3],string,15%
+2026-03,vinculacion.kpiAgregador[0].title,string,#Transacciones
+2026-03,vinculacion.kpiAgregador[0].real,string,"100,18 mil"
+2026-03,vinculacion.kpiAgregador[0].meta,string,"113,99 mil"
+2026-03,vinculacion.kpiAgregador[0].cumplimiento,string,"87,89%"
+2026-03,vinculacion.kpiAgregador[0].realPrev,string,"94,42 mil"
+2026-03,vinculacion.kpiAgregador[0].metaPrev,string,"109,33 mil"
+2026-03,vinculacion.kpiAgregador[0].tone,string,red
+2026-03,vinculacion.kpiAgregador[1].title,string,$ Dinero operado
+2026-03,vinculacion.kpiAgregador[1].real,string,"$23,94 mil M"
+2026-03,vinculacion.kpiAgregador[1].meta,string,"$28,29 mil M"
+2026-03,vinculacion.kpiAgregador[1].cumplimiento,string,"84,62%"
+2026-03,vinculacion.kpiAgregador[1].realPrev,string,"$22,55 mil M"
+2026-03,vinculacion.kpiAgregador[1].metaPrev,string,"$27,13 mil M"
+2026-03,vinculacion.kpiAgregador[1].tone,string,red
+2026-03,vinculacion.kpiAgregador[2].title,string,Ticket promedio
+2026-03,vinculacion.kpiAgregador[2].real,string,"$238,97 mil"
+2026-03,vinculacion.kpiAgregador[2].meta,string,"$248,20 mil"
+2026-03,vinculacion.kpiAgregador[2].cumplimiento,string,"96,28%"
+2026-03,vinculacion.kpiAgregador[2].realPrev,string,"$238,82 mil"
+2026-03,vinculacion.kpiAgregador[2].metaPrev,string,"$248,20 mil"
+2026-03,vinculacion.kpiAgregador[2].tone,string,green
+2026-03,vinculacion.kpiAgregador[3].title,string,Clientes transaccionales
+2026-03,vinculacion.kpiAgregador[3].real,string,"2,61 mil"
+2026-03,vinculacion.kpiAgregador[3].meta,string,"3,45 mil"
+2026-03,vinculacion.kpiAgregador[3].cumplimiento,string,"75,67%"
+2026-03,vinculacion.kpiAgregador[3].realPrev,string,"2,56 mil"
+2026-03,vinculacion.kpiAgregador[3].metaPrev,string,"3,31 mil"
+2026-03,vinculacion.kpiAgregador[3].tone,string,red
+2026-03,vinculacion.kpiGateway[0].title,string,#Transacciones
+2026-03,vinculacion.kpiGateway[0].real,string,"3,42 M"
+2026-03,vinculacion.kpiGateway[0].meta,string,"4,63 M"
+2026-03,vinculacion.kpiGateway[0].cumplimiento,string,74%
+2026-03,vinculacion.kpiGateway[0].realPrev,string,"3,18 M"
+2026-03,vinculacion.kpiGateway[0].metaPrev,string,"4,52 M"
+2026-03,vinculacion.kpiGateway[0].tone,string,red
+2026-03,vinculacion.kpiGateway[1].title,string,Clientes
+2026-03,vinculacion.kpiGateway[1].real,string,"6,87 mil"
+2026-03,vinculacion.kpiGateway[1].meta,string,"6,51 mil"
+2026-03,vinculacion.kpiGateway[1].cumplimiento,string,106%
+2026-03,vinculacion.kpiGateway[1].realPrev,string,"6,82 mil"
+2026-03,vinculacion.kpiGateway[1].metaPrev,string,"6,36 mil"
+2026-03,vinculacion.kpiGateway[1].tone,string,green
+2026-03,vinculacion.kpiGateway[2].title,string,TXR promedio x cliente
+2026-03,vinculacion.kpiGateway[2].real,string,499
+2026-03,vinculacion.kpiGateway[2].meta,string,711
+2026-03,vinculacion.kpiGateway[2].cumplimiento,string,70%
+2026-03,vinculacion.kpiGateway[2].realPrev,string,467
+2026-03,vinculacion.kpiGateway[2].metaPrev,string,711
+2026-03,vinculacion.kpiGateway[2].tone,string,red
+2026-03,transaccionales.pie[0].name,string,Portafolio Movistar
+2026-03,transaccionales.pie[0].value,number,30.6
+2026-03,transaccionales.pie[0].color,string,#1967e8
+2026-03,transaccionales.pie[1].name,string,Portafolio Wom
+2026-03,transaccionales.pie[1].value,number,7.1
+2026-03,transaccionales.pie[1].color,string,#28105f
+2026-03,transaccionales.pie[2].name,string,Portafolio Davivienda
+2026-03,transaccionales.pie[2].value,number,40.8
+2026-03,transaccionales.pie[2].color,string,#ea2c20
+2026-03,transaccionales.pie[3].name,string,Portafolio General
+2026-03,transaccionales.pie[3].value,number,18
+2026-03,transaccionales.pie[3].color,string,#f1d554
+2026-03,transaccionales.pie[4].name,string,Portafolio especial
+2026-03,transaccionales.pie[4].value,number,3.5
+2026-03,transaccionales.pie[4].color,string,#ef7b7b
+2026-03,transaccionales.values[0][0],string,Portafolio Movistar
+2026-03,transaccionales.values[0][1],string,1.047.715
+2026-03,transaccionales.values[1][0],string,Portafolio Wom
+2026-03,transaccionales.values[1][1],string,244.511
+2026-03,transaccionales.values[2][0],string,Portafolio Davivienda
+2026-03,transaccionales.values[2][1],string,1.398.107
+2026-03,transaccionales.values[3][0],string,Portafolio General
+2026-03,transaccionales.values[3][1],string,616.724
+2026-03,transaccionales.values[4][0],string,Portafolio especial
+2026-03,transaccionales.values[4][1],string,121.492
+2026-03,transaccionales.total,string,3.428.549
 2026-03,transaccionales.churnAgregador.activos,json,[]
 2026-03,transaccionales.churnAgregador.churn,json,[]
+2026-03,transaccionales.churnAgregador.nuevos,json,[]
 2026-03,transaccionales.churnAgregador.promedioActivos,string,
 2026-03,transaccionales.churnAgregador.tasaMes,string,
 2026-03,transaccionales.churnAgregador.promedioChurn,string,
+2026-03,transaccionales.churnAgregador.promedioNuevos,string,
 2026-03,transaccionales.churnGateway.activos,json,[]
 2026-03,transaccionales.churnGateway.churn,json,[]
+2026-03,transaccionales.churnGateway.nuevos,json,[]
 2026-03,transaccionales.churnGateway.promedioActivos,string,
 2026-03,transaccionales.churnGateway.tasaMes,string,
 2026-03,transaccionales.churnGateway.promedioChurn,string,
+2026-03,transaccionales.churnGateway.promedioNuevos,string,
 2026-03,nps.metas[0].title,string,Meta NPS
 2026-03,nps.metas[0].value,string,90
 2026-03,nps.metas[0].color,string,#ef5a5a

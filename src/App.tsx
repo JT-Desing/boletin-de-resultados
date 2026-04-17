@@ -946,6 +946,27 @@ function getPeriodMeta(periodKey) {
   };
 }
 
+function shiftPeriodKey(periodKey, monthDelta) {
+  const [yearRaw, monthRaw] = String(periodKey || "").split("-");
+  const year = Number(yearRaw);
+  const month = Number(monthRaw);
+  if (!Number.isFinite(year) || !Number.isFinite(month)) return undefined;
+
+  const date = new Date(year, month - 1 + monthDelta, 1);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+}
+
+function formatSharePercent(value) {
+  const numericValue = Number(value);
+  if (Number.isNaN(numericValue)) return `${value}%`;
+
+  const hasDecimals = Math.abs(numericValue % 1) > 0.001;
+  return `${numericValue.toLocaleString("es-CO", {
+    minimumFractionDigits: hasDecimals ? 1 : 0,
+    maximumFractionDigits: hasDecimals ? 1 : 0,
+  })}%`;
+}
+
 function getHeaderCutLabel(selectedPeriods) {
   if (!selectedPeriods?.length)
     return { top: "CORTE", main: "SIN DATOS", bottom: "----" };
@@ -1456,25 +1477,28 @@ function SmallRedTable({ title, rows }) {
   );
 }
 
-function KPICompareCard({ item }) {
+function KPICompareCard({ item, periodKey }) {
   const green = item.tone === "green";
+  const currentLabel = periodKey ? getPeriodMeta(periodKey).short : "Feb-26";
+  const previousKey = periodKey ? shiftPeriodKey(periodKey, -1) : undefined;
+  const previousLabel = previousKey ? getPeriodMeta(previousKey).short : "Ene-26";
   return (
     <div className="kpi-compare-card hover-card">
       <div className="kpi-top-label">Indicador</div>
       <div className="kpi-top-title">{item.title}</div>
       <div className={green ? "kpi-real-box-green" : "kpi-real-box-red"}>
-        <div className="kpi-sub-label">Real Feb-26</div>
+        <div className="kpi-sub-label">{`Real ${currentLabel}`}</div>
         <div className={green ? "kpi-real-green" : "kpi-real-red"}>
           {item.real}
         </div>
       </div>
       <div className="kpi-grid-2">
         <div className="kpi-small-box">
-          <div className="kpi-sub-label">Meta Feb-26</div>
+          <div className="kpi-sub-label">{`Meta ${currentLabel}`}</div>
           <div className="kpi-small-value">{item.meta}</div>
         </div>
         <div className="kpi-small-box">
-          <div className="kpi-sub-label">Cumplimiento Feb 26</div>
+          <div className="kpi-sub-label">{`Cumplimiento ${currentLabel}`}</div>
           <div className={green ? "kpi-success" : "kpi-danger"}>
             {item.cumplimiento}
           </div>
@@ -1482,11 +1506,11 @@ function KPICompareCard({ item }) {
       </div>
       <div className="kpi-grid-2">
         <div className="kpi-small-box-alt">
-          <div className="kpi-sub-label">Real Ene-26</div>
+          <div className="kpi-sub-label">{`Real ${previousLabel}`}</div>
           <div className="kpi-small-value">{item.realPrev}</div>
         </div>
         <div className="kpi-small-box-alt">
-          <div className="kpi-sub-label">Meta Ene-26</div>
+          <div className="kpi-sub-label">{`Meta ${previousLabel}`}</div>
           <div className="kpi-small-value">{item.metaPrev}</div>
         </div>
       </div>
@@ -1618,8 +1642,38 @@ function ChurnLine({ title, color, data, showRate = false }) {
   );
 }
 
+function EmptyChartPanel({ title, color, message }) {
+  return (
+    <div className="chart-panel hover-card">
+      <div className="chart-title-inline">
+        <span className="chart-dot-inline" style={{ background: color }} />
+        {title}
+      </div>
+      <div
+        style={{
+          height: 270,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          color: "#7a7a7a",
+          fontSize: 16,
+          lineHeight: 1.6,
+          padding: "0 32px",
+        }}
+      >
+        {message}
+      </div>
+    </div>
+  );
+}
+
 function ChurnCard({ title, dataset, topColor, bottomColor }) {
-  if (!dataset?.activos?.length && !dataset?.churn?.length) {
+  const promedioActivos = dataset?.promedioActivos || "--";
+  const tasaMes = dataset?.tasaMes || "--";
+  const promedioChurn = dataset?.promedioChurn || "--";
+  const promedioNuevos = dataset?.promedioNuevos || "--";
+  if (false) {
     return (
       <PageCard>
         <div
@@ -1653,18 +1707,48 @@ function ChurnCard({ title, dataset, topColor, bottomColor }) {
       </div>
       <div className="churn-card-inner">
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <ChurnLine
-            title="Clientes activos"
-            color={topColor}
-            data={dataset.activos}
-          />
+          {dataset?.activos?.length ? (
+            <ChurnLine
+              title="Clientes activos"
+              color={topColor}
+              data={dataset.activos}
+            />
+          ) : (
+            <EmptyChartPanel
+              title="Clientes activos"
+              color={topColor}
+              message="Pendiente por cargar datos del periodo."
+            />
+          )}
           <div style={{ height: 1, background: "#ececec" }} />
-          <ChurnLine
-            title="Churn clientes"
-            color={bottomColor}
-            data={dataset.churn}
-            showRate
-          />
+          {dataset?.churn?.length ? (
+            <ChurnLine
+              title="Churn clientes"
+              color={bottomColor}
+              data={dataset.churn}
+              showRate
+            />
+          ) : (
+            <EmptyChartPanel
+              title="Churn clientes"
+              color={bottomColor}
+              message="Pendiente por cargar churn del periodo."
+            />
+          )}
+          <div style={{ height: 1, background: "#ececec" }} />
+          {dataset?.nuevos?.length ? (
+            <ChurnLine
+              title="Clientes nuevos"
+              color={COLORS.green}
+              data={dataset.nuevos}
+            />
+          ) : (
+            <EmptyChartPanel
+              title="Clientes nuevos"
+              color={COLORS.green}
+              message="Pendiente por cargar clientes nuevos."
+            />
+          )}
         </div>
         <div
           style={{
@@ -1679,15 +1763,15 @@ function ChurnCard({ title, dataset, topColor, bottomColor }) {
             <div className="metric-side-label">
               Promedio de clientes activos
             </div>
-            <div className="metric-side-value">{dataset.promedioActivos}</div>
+            <div className="metric-side-value">{promedioActivos}</div>
           </div>
           <div className="metric-side-chip">
             <div className="top">Tasa % mes</div>
-            <div className="bottom">{dataset.tasaMes}</div>
+            <div className="bottom">{tasaMes}</div>
           </div>
           <div className="metric-side-box hover-card">
             <div className="metric-side-label">Promedio de Churn clientes</div>
-            <div className="metric-side-value">{dataset.promedioChurn}</div>
+            <div className="metric-side-value">{promedioChurn}</div>
             <div className="metric-side-legend">
               <span
                 style={{
@@ -1700,13 +1784,19 @@ function ChurnCard({ title, dataset, topColor, bottomColor }) {
               Tasa de porcentaje Churn
             </div>
           </div>
+          <div className="metric-side-box hover-card">
+            <div className="metric-side-label">Promedio de clientes nuevos</div>
+            <div className="metric-side-value">{promedioNuevos}</div>
+          </div>
         </div>
       </div>
     </PageCard>
   );
 }
 
-function PortfolioBlock({ data }) {
+function PortfolioBlock({ data, periodKey }) {
+  const periodLabel = periodKey ? getPeriodMeta(periodKey).short.toLowerCase() : "mes";
+
   if (!data?.pie?.length)
     return (
       <div style={{ color: "#666" }}>
@@ -1727,7 +1817,7 @@ function PortfolioBlock({ data }) {
                 innerRadius={110}
                 outerRadius={200}
                 dataKey="value"
-                label={({ name, value }) => `${name}\n${value}%`}
+                label={({ name, value }) => `${name}\n${formatSharePercent(value)}`}
               >
                 {data.pie.map((entry) => (
                   <Cell key={entry.name} fill={entry.color} />
@@ -1751,7 +1841,7 @@ function PortfolioBlock({ data }) {
             >
               <div>
                 <div className="portfolio-value-title">{name}</div>
-                <div className="portfolio-value-sub"># TRX feb-26</div>
+                <div className="portfolio-value-sub">{`# TRX ${periodLabel}`}</div>
               </div>
               <div className="portfolio-value-num">{value}</div>
             </div>
@@ -1768,7 +1858,7 @@ function PortfolioBlock({ data }) {
           >
             <div>
               <div className="portfolio-value-title">Total</div>
-              <div className="portfolio-value-sub"># TRX feb-26</div>
+              <div className="portfolio-value-sub">{`# TRX ${periodLabel}`}</div>
             </div>
             <div className="portfolio-total-pill">{data.total}</div>
           </div>
@@ -2018,8 +2108,9 @@ function IngresosPage({
 
 function VinculacionPage({
   data,
+  periodKey,
   ...sharedHeaderProps
-}: { data: any } & SharedHeaderProps) {
+}: { data: any; periodKey?: string } & SharedHeaderProps) {
   const hasData = Boolean(data.vinculacion?.months?.length);
 
   return (
@@ -2065,7 +2156,7 @@ function VinculacionPage({
               />
               <div className="grid-4" style={{ marginTop: 16 }}>
                 {data.vinculacion.kpiAgregador.map((item) => (
-                  <KPICompareCard key={item.title} item={item} />
+                <KPICompareCard key={item.title} item={item} periodKey={periodKey} />
                 ))}
               </div>
             </PageCard>
@@ -2076,7 +2167,7 @@ function VinculacionPage({
               />
               <div className="grid-3" style={{ marginTop: 16 }}>
                 {data.vinculacion.kpiGateway.map((item) => (
-                  <KPICompareCard key={item.title} item={item} />
+                <KPICompareCard key={item.title} item={item} periodKey={periodKey} />
                 ))}
               </div>
             </PageCard>
@@ -2087,7 +2178,7 @@ function VinculacionPage({
                 description="Distribución de la transaccionalidad Gateway por en el portafolio de negociaciones actuales ePayco."
               />
               <div style={{ marginTop: 16 }}>
-                <PortfolioBlock data={data.transaccionales} />
+              <PortfolioBlock data={data.transaccionales} periodKey={periodKey} />
               </div>
             </PageCard>
           </>
@@ -2325,7 +2416,11 @@ export default function App() {
         <IngresosPage data={data} {...sharedHeaderProps} />
       )}
       {currentPage === "vinculacion" && (
-        <VinculacionPage data={data} {...sharedHeaderProps} />
+        <VinculacionPage
+          data={data}
+          periodKey={primaryPeriod}
+          {...sharedHeaderProps}
+        />
       )}
       {currentPage === "transaccionales" && (
         <TransaccionalesPage data={data} {...sharedHeaderProps} />
