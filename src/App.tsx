@@ -1265,7 +1265,7 @@ function TinyLineChart({ data }) {
   );
 }
 
-function MarginBox({ item }) {
+function MarginBox({ item, currentLabel }) {
   return (
     <div className="margin-box hover-card">
       <div
@@ -1278,7 +1278,7 @@ function MarginBox({ item }) {
       >
         <div>
           <h3 className="margin-title">{item.title}</h3>
-          <div className="tiny-meta">FEB REAL</div>
+          <div className="tiny-meta">{`REAL ${currentLabel}`}</div>
           <div className="big-num">{item.real}</div>
         </div>
         <div className="top-right">
@@ -1327,16 +1327,23 @@ function HelperBox({ title, text, tone, icon: Icon }) {
   );
 }
 
-function TableBlock({ rows }) {
+function TableBlock({ rows, periodKey }) {
+  const currentLabel = periodKey
+    ? getPeriodMeta(periodKey).short.toLowerCase()
+    : "feb-26";
+  const previousKey = periodKey ? shiftPeriodKey(periodKey, -1) : undefined;
+  const previousLabel = previousKey
+    ? getPeriodMeta(previousKey).short.toLowerCase()
+    : "ene-26";
   const headers = [
     "Línea incluida",
-    "Logrado ene",
-    "Meta ene",
-    "Cumpl. ene",
-    "Logrado feb",
-    "Meta feb",
-    "Cumpl. feb",
-    "Variación feb vs ene",
+    `Logrado ${previousLabel}`,
+    `Meta ${previousLabel}`,
+    `Cumpl. ${previousLabel}`,
+    `Logrado ${currentLabel}`,
+    `Meta ${currentLabel}`,
+    `Cumpl. ${currentLabel}`,
+    `Variación ${currentLabel} vs ${previousLabel}`,
   ];
 
   const getComplianceTone = (val) => {
@@ -1994,9 +2001,21 @@ function InicioPage({ go }) {
 
 function IngresosPage({
   data,
+  periodKey,
   ...sharedHeaderProps
-}: { data: any } & SharedHeaderProps) {
+}: { data: any; periodKey?: string } & SharedHeaderProps) {
   const hasData = Boolean(data.ingresos?.cards?.length);
+  const currentShort = periodKey
+    ? getPeriodMeta(periodKey).short.toLowerCase()
+    : "feb-26";
+  const currentUpper = periodKey ? getPeriodMeta(periodKey).short.toUpperCase() : "FEB-26";
+  const previousKey = periodKey ? shiftPeriodKey(periodKey, -1) : undefined;
+  const previousShort = previousKey
+    ? getPeriodMeta(previousKey).short.toLowerCase()
+    : "ene-26";
+  const previousMiniLabel = previousKey
+    ? getPeriodMeta(previousKey).short.split("-")[0].toUpperCase()
+    : "ENE";
 
   return (
     <div className="app-shell">
@@ -2031,7 +2050,7 @@ function IngresosPage({
                 </div>
                 <div className="summary-foot">
                   <div>
-                    <div className="summary-label">ENE</div>
+                    <div className="summary-label">{previousMiniLabel}</div>
                     <div style={{ fontSize: 24, fontWeight: 900 }}>
                       {data.ingresos.summary.ene}
                     </div>
@@ -2046,7 +2065,7 @@ function IngresosPage({
               </div>
               <div className="grid-3" style={{ marginTop: 16 }}>
                 {data.ingresos.margins.map((item) => (
-                  <MarginBox key={item.title} item={item} />
+                  <MarginBox key={item.title} item={item} currentLabel={currentUpper} />
                 ))}
               </div>
               <div className="grid-3" style={{ marginTop: 16 }}>
@@ -2064,30 +2083,30 @@ function IngresosPage({
                 />
                 <HelperBox
                   title="Lectura simple del mes"
-                  text="Gateway supera su meta y Agregador queda cerca. Otras líneas mejoran, pero algunas permanecen por debajo del presupuesto esperado."
+                  text={`Empieza por el ingreso total, luego revisa la variación frente a ${previousShort} y termina con el cumplimiento frente al presupuesto de ${currentShort}.`}
                   tone="red"
                   icon={AlertTriangle}
                 />
               </div>
             </PageCard>
             <PageCard>
-              <TableBlock rows={data.ingresos.table} />
+              <TableBlock rows={data.ingresos.table} periodKey={periodKey} />
               <div className="grid-3" style={{ marginTop: 20 }}>
                 <HelperBox
                   title="Qué leer en verde"
-                  text="La píldora verde en cada tarjeta indica la variación de febrero frente a enero. Gateway es el principal impulsor del crecimiento mensual (+40,2%). El ingreso total sube +19,2% y supera presupuesto consolidado (+4,9%)."
+                  text={`La primera píldora resume la variación de ${currentShort} frente a ${previousShort}; la segunda muestra el cumplimiento contra la meta del mes.`}
                   tone="green"
                   icon={CheckCircle2}
                 />
                 <HelperBox
                   title="Cumplimiento vs presupuesto"
-                  text="Negro = meta presupuestada del mes (PPTO). La píldora de cumplimiento compara real de febrero contra la meta. Verde: cumple o supera, naranja: cerca, rojo: por debajo."
+                  text={`Negro = meta presupuestada de ${currentShort}. Verde = cumple o supera; amarillo = cerca; rojo = por debajo del objetivo.`}
                   tone="yellow"
                   icon={Gauge}
                 />
                 <HelperBox
                   title="Alertas de depuración"
-                  text="Se toma ingresos ordinarios como referencia principal y no servicios ePayco. Se excluye desarrollo de software del bloque operativo mostrado. Los valores fueron normalizados para miles y decimales antes de graficar."
+                  text="La tabla operativa toma ingresos ordinarios como referencia principal y excluye desarrollo de software del detalle mostrado."
                   tone="red"
                   icon={AlertTriangle}
                 />
@@ -2413,7 +2432,11 @@ export default function App() {
 
       {currentPage === "inicio" && <InicioPage go={setCurrentPage} />}
       {currentPage === "ingresos" && (
-        <IngresosPage data={data} {...sharedHeaderProps} />
+        <IngresosPage
+          data={data}
+          periodKey={primaryPeriod}
+          {...sharedHeaderProps}
+        />
       )}
       {currentPage === "vinculacion" && (
         <VinculacionPage

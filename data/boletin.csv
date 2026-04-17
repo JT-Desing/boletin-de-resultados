@@ -399,10 +399,150 @@ period,path,type,value
 2026-02,nps.glossary[7].text,string,Porcentaje de cumplimiento frente a la meta de duración promedio.
 2026-03,corteMes,string,MARZO
 2026-03,corteAnio,string,2026
-2026-03,ingresos.cards,json,[]
-2026-03,ingresos.summary,json,{}
-2026-03,ingresos.margins,json,[]
-2026-03,ingresos.table,json,[]
+2026-03,ingresos.cards[0].title,string,Ingresos Agregador
+2026-03,ingresos.cards[0].value,string,"$677,0 M"
+2026-03,ingresos.cards[0].delta,string,"-14,0 % vs feb"
+2026-03,ingresos.cards[0].meta,string,"78,3 % de meta"
+2026-03,ingresos.cards[0].deltaTone,string,red
+2026-03,ingresos.cards[0].metaTone,string,red
+2026-03,ingresos.cards[1].title,string,Ingresos Gateway
+2026-03,ingresos.cards[1].value,string,"$574,5 M"
+2026-03,ingresos.cards[1].subtitle,string,Afiliaciones + transacciones
+2026-03,ingresos.cards[1].delta,string,"-27,0 % vs feb"
+2026-03,ingresos.cards[1].meta,string,"100,0 % de meta"
+2026-03,ingresos.cards[1].deltaTone,string,red
+2026-03,ingresos.cards[1].metaTone,string,yellow
+2026-03,ingresos.cards[2].title,string,Otras líneas
+2026-03,ingresos.cards[2].value,string,"$154,8 M"
+2026-03,ingresos.cards[2].delta,string,"+212,0 % vs feb"
+2026-03,ingresos.cards[2].meta,string,"115,8 % de meta"
+2026-03,ingresos.cards[2].deltaTone,string,green
+2026-03,ingresos.cards[2].metaTone,string,green
+2026-03,ingresos.cards[3].title,string,Ingreso total
+2026-03,ingresos.cards[3].value,string,"$1.389,0 M"
+2026-03,ingresos.cards[3].delta,string,"-14,3 % vs feb"
+2026-03,ingresos.cards[3].meta,string,"90,8 % de meta"
+2026-03,ingresos.cards[3].deltaTone,string,red
+2026-03,ingresos.cards[3].metaTone,string,yellow
+2026-03,ingresos.summary.total,string,"$1389,0 M"
+2026-03,ingresos.summary.delta,string,"-14,3%"
+2026-03,ingresos.summary.cumplimiento,string,"Cumpl. 90,8%"
+2026-03,ingresos.summary.ene,string,"$1621,5 M"
+2026-03,ingresos.summary.ppto,string,"$1611,2 M"
+2026-03,ingresos.margins[0].title,string,Margen bruto
+2026-03,ingresos.margins[0].real,string,"$907,3 M"
+2026-03,ingresos.margins[0].ppto,string,"$978,5 M"
+2026-03,ingresos.margins[0].pill,string,"92,7 %"
+2026-03,ingresos.margins[0].pillTone,string,red
+2026-03,ingresos.margins[0].vsText,string,"-20,2%"
+2026-03,ingresos.margins[0].vsTone,string,red
+2026-03,ingresos.margins[0].note,string,"Variación absoluta vs meta: -$230,2 M"
+2026-03,ingresos.margins[0].series[0].name,string,FEB
+2026-03,ingresos.margins[0].series[0].value,number,1212.7
+2026-03,ingresos.margins[0].series[1].name,string,MAR REAL
+2026-03,ingresos.margins[0].series[1].value,number,907.3
+2026-03,ingresos.margins[0].series[2].name,string,PPTO
+2026-03,ingresos.margins[0].series[2].value,number,978.5
+2026-03,ingresos.margins[1].title,string,Margen EBITDA
+2026-03,ingresos.margins[1].real,string,"-$843,4 M"
+2026-03,ingresos.margins[1].ppto,string,"-$749,2 M"
+2026-03,ingresos.margins[1].pill,string,"88,8 %"
+2026-03,ingresos.margins[1].pillTone,string,red
+2026-03,ingresos.margins[1].vsText,string,"+60,9%"
+2026-03,ingresos.margins[1].vsTone,string,green
+2026-03,ingresos.margins[1].note,string,"Variación absoluta vs meta: -$319,4 M"
+2026-03,ingresos.margins[1].series[0].name,string,FEB
+2026-03,ingresos.margins[1].series[0].value,number,78.6
+2026-03,ingresos.margins[1].series[1].name,string,MAR REAL
+2026-03,ingresos.margins[1].series[1].value,number,-843.4
+2026-03,ingresos.margins[1].series[2].name,string,PPTO
+2026-03,ingresos.margins[1].series[2].value,number,-749.2
+2026-03,ingresos.margins[2].title,string,Margen neto
+2026-03,ingresos.margins[2].real,string,"-$891,5 M"
+2026-03,ingresos.margins[2].ppto,string,"-$763,6 M"
+2026-03,ingresos.margins[2].pill,string,"116,8 %"
+2026-03,ingresos.margins[2].pillTone,string,red
+2026-03,ingresos.margins[2].vsText,string,"+54,4%"
+2026-03,ingresos.margins[2].vsTone,string,green
+2026-03,ingresos.margins[2].note,string,"Variación absoluta vs meta: -$314,2 M"
+2026-03,ingresos.margins[2].series[0].name,string,FEB
+2026-03,ingresos.margins[2].series[0].value,number,25.4
+2026-03,ingresos.margins[2].series[1].name,string,MAR REAL
+2026-03,ingresos.margins[2].series[1].value,number,-891.5
+2026-03,ingresos.margins[2].series[2].name,string,PPTO
+2026-03,ingresos.margins[2].series[2].value,number,-763.6
+2026-03,ingresos.table[0][0],string,Ingresos total
+2026-03,ingresos.table[0][1],string,"$1.621,5 M"
+2026-03,ingresos.table[0][2],string,"$1.545,9 M"
+2026-03,ingresos.table[0][3],string,104.9%
+2026-03,ingresos.table[0][4],string,"$1.389,0 M"
+2026-03,ingresos.table[0][5],string,"$1.611,2 M"
+2026-03,ingresos.table[0][6],string,90.8%
+2026-03,ingresos.table[0][7],string,-143%
+2026-03,ingresos.table[1][0],string,ePayco pagos Agregador
+2026-03,ingresos.table[1][1],string,"$787,7 M"
+2026-03,ingresos.table[1][2],string,"$828,9 M"
+2026-03,ingresos.table[1][3],string,95.0%
+2026-03,ingresos.table[1][4],string,"$677,0 M"
+2026-03,ingresos.table[1][5],string,"$864,2 M"
+2026-03,ingresos.table[1][6],string,78.3%
+2026-03,ingresos.table[1][7],string,-140%
+2026-03,ingresos.table[2][0],string,ePayco pagos Gateway
+2026-03,ingresos.table[2][1],string,"$787,2 M"
+2026-03,ingresos.table[2][2],string,"$622,6 M"
+2026-03,ingresos.table[2][3],string,126.5%
+2026-03,ingresos.table[2][4],string,"$574,5 M"
+2026-03,ingresos.table[2][5],string,"$649,1 M"
+2026-03,ingresos.table[2][6],string,88.5%
+2026-03,ingresos.table[2][7],string,2120%
+2026-03,ingresos.table[3][0],string,ePayco Recaudo
+2026-03,ingresos.table[3][1],string,"$8,0 M"
+2026-03,ingresos.table[3][2],string,"$46,1 M"
+2026-03,ingresos.table[3][3],string,17.4%
+2026-03,ingresos.table[3][4],string,"$50,5 M"
+2026-03,ingresos.table[3][5],string,"$48,1 M"
+2026-03,ingresos.table[3][6],string,104.9%
+2026-03,ingresos.table[3][7],string,5276%
+2026-03,ingresos.table[4][0],string,Suscripciones
+2026-03,ingresos.table[4][1],string,"$6,0 M"
+2026-03,ingresos.table[4][2],string,"$6,1 M"
+2026-03,ingresos.table[4][3],string,98.5%
+2026-03,ingresos.table[4][4],string,"$21,1 M"
+2026-03,ingresos.table[4][5],string,"$6,4 M"
+2026-03,ingresos.table[4][6],string,332.5%
+2026-03,ingresos.table[4][7],string,2518%
+2026-03,ingresos.table[5][0],string,ePayco Control
+2026-03,ingresos.table[5][1],string,"$26,1 M"
+2026-03,ingresos.table[5][2],string,"$47,9 M"
+2026-03,ingresos.table[5][3],string,54.5%
+2026-03,ingresos.table[5][4],string,"$58,3 M"
+2026-03,ingresos.table[5][5],string,"$50,0 M"
+2026-03,ingresos.table[5][6],string,116.7%
+2026-03,ingresos.table[5][7],string,1231%
+2026-03,ingresos.table[6][0],string,ePayco Paypal
+2026-03,ingresos.table[6][1],string,"$1,2 M"
+2026-03,ingresos.table[6][2],string,"$23,7 M"
+2026-03,ingresos.table[6][3],string,5.2%
+2026-03,ingresos.table[6][4],string,"$5,2 M"
+2026-03,ingresos.table[6][5],string,"$24,1 M"
+2026-03,ingresos.table[6][6],string,21.7%
+2026-03,ingresos.table[6][7],string,3207%
+2026-03,ingresos.table[7][0],string,ePayco shops
+2026-03,ingresos.table[7][1],string,"$0,0 M"
+2026-03,ingresos.table[7][2],string,"$0,2 M"
+2026-03,ingresos.table[7][3],string,0.0%
+2026-03,ingresos.table[7][4],string,"$0,7 M"
+2026-03,ingresos.table[7][5],string,"$0,2 M"
+2026-03,ingresos.table[7][6],string,392.5%
+2026-03,ingresos.table[7][7],string,0%
+2026-03,ingresos.table[8][0],string,ePayco PayOuts
+2026-03,ingresos.table[8][1],string,"$0,0 M"
+2026-03,ingresos.table[8][2],string,"$0,1 M"
+2026-03,ingresos.table[8][3],string,4.3%
+2026-03,ingresos.table[8][4],string,"$0,0 M"
+2026-03,ingresos.table[8][5],string,"$0,1 M"
+2026-03,ingresos.table[8][6],string,41.1%
+2026-03,ingresos.table[8][7],string,9000%
 2026-03,vinculacion.months[0].label,string,Ene-26
 2026-03,vinculacion.months[0].fact,string,"Fact. $19,4 M"
 2026-03,vinculacion.months[0].activacion,string,27%

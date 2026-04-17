@@ -649,10 +649,214 @@
     "corteMes": "MARZO",
     "corteAnio": "2026",
     "ingresos": {
-      "cards": [],
-      "summary": {},
-      "margins": [],
-      "table": []
+      "cards": [
+        {
+          "title": "Ingresos Agregador",
+          "value": "$677,0 M",
+          "delta": "-14,0 % vs feb",
+          "meta": "78,3 % de meta",
+          "deltaTone": "red",
+          "metaTone": "red"
+        },
+        {
+          "title": "Ingresos Gateway",
+          "value": "$574,5 M",
+          "subtitle": "Afiliaciones + transacciones",
+          "delta": "-27,0 % vs feb",
+          "meta": "100,0 % de meta",
+          "deltaTone": "red",
+          "metaTone": "yellow"
+        },
+        {
+          "title": "Otras líneas",
+          "value": "$154,8 M",
+          "delta": "+212,0 % vs feb",
+          "meta": "115,8 % de meta",
+          "deltaTone": "green",
+          "metaTone": "green"
+        },
+        {
+          "title": "Ingreso total",
+          "value": "$1.389,0 M",
+          "delta": "-14,3 % vs feb",
+          "meta": "90,8 % de meta",
+          "deltaTone": "red",
+          "metaTone": "yellow"
+        }
+      ],
+      "summary": {
+        "total": "$1389,0 M",
+        "delta": "-14,3%",
+        "cumplimiento": "Cumpl. 90,8%",
+        "ene": "$1621,5 M",
+        "ppto": "$1611,2 M"
+      },
+      "margins": [
+        {
+          "title": "Margen bruto",
+          "real": "$907,3 M",
+          "ppto": "$978,5 M",
+          "pill": "92,7 %",
+          "pillTone": "red",
+          "vsText": "-20,2%",
+          "vsTone": "red",
+          "note": "Variación absoluta vs meta: -$230,2 M",
+          "series": [
+            {
+              "name": "FEB",
+              "value": 1212.7
+            },
+            {
+              "name": "MAR REAL",
+              "value": 907.3
+            },
+            {
+              "name": "PPTO",
+              "value": 978.5
+            }
+          ]
+        },
+        {
+          "title": "Margen EBITDA",
+          "real": "-$843,4 M",
+          "ppto": "-$749,2 M",
+          "pill": "88,8 %",
+          "pillTone": "red",
+          "vsText": "+60,9%",
+          "vsTone": "green",
+          "note": "Variación absoluta vs meta: -$319,4 M",
+          "series": [
+            {
+              "name": "FEB",
+              "value": 78.6
+            },
+            {
+              "name": "MAR REAL",
+              "value": -843.4
+            },
+            {
+              "name": "PPTO",
+              "value": -749.2
+            }
+          ]
+        },
+        {
+          "title": "Margen neto",
+          "real": "-$891,5 M",
+          "ppto": "-$763,6 M",
+          "pill": "116,8 %",
+          "pillTone": "red",
+          "vsText": "+54,4%",
+          "vsTone": "green",
+          "note": "Variación absoluta vs meta: -$314,2 M",
+          "series": [
+            {
+              "name": "FEB",
+              "value": 25.4
+            },
+            {
+              "name": "MAR REAL",
+              "value": -891.5
+            },
+            {
+              "name": "PPTO",
+              "value": -763.6
+            }
+          ]
+        }
+      ],
+      "table": [
+        [
+          "Ingresos total",
+          "$1.621,5 M",
+          "$1.545,9 M",
+          "104.9%",
+          "$1.389,0 M",
+          "$1.611,2 M",
+          "90.8%",
+          "-143%"
+        ],
+        [
+          "ePayco pagos Agregador",
+          "$787,7 M",
+          "$828,9 M",
+          "95.0%",
+          "$677,0 M",
+          "$864,2 M",
+          "78.3%",
+          "-140%"
+        ],
+        [
+          "ePayco pagos Gateway",
+          "$787,2 M",
+          "$622,6 M",
+          "126.5%",
+          "$574,5 M",
+          "$649,1 M",
+          "88.5%",
+          "2120%"
+        ],
+        [
+          "ePayco Recaudo",
+          "$8,0 M",
+          "$46,1 M",
+          "17.4%",
+          "$50,5 M",
+          "$48,1 M",
+          "104.9%",
+          "5276%"
+        ],
+        [
+          "Suscripciones",
+          "$6,0 M",
+          "$6,1 M",
+          "98.5%",
+          "$21,1 M",
+          "$6,4 M",
+          "332.5%",
+          "2518%"
+        ],
+        [
+          "ePayco Control",
+          "$26,1 M",
+          "$47,9 M",
+          "54.5%",
+          "$58,3 M",
+          "$50,0 M",
+          "116.7%",
+          "1231%"
+        ],
+        [
+          "ePayco Paypal",
+          "$1,2 M",
+          "$23,7 M",
+          "5.2%",
+          "$5,2 M",
+          "$24,1 M",
+          "21.7%",
+          "3207%"
+        ],
+        [
+          "ePayco shops",
+          "$0,0 M",
+          "$0,2 M",
+          "0.0%",
+          "$0,7 M",
+          "$0,2 M",
+          "392.5%",
+          "0%"
+        ],
+        [
+          "ePayco PayOuts",
+          "$0,0 M",
+          "$0,1 M",
+          "4.3%",
+          "$0,0 M",
+          "$0,1 M",
+          "41.1%",
+          "9000%"
+        ]
+      ]
     },
     "vinculacion": {
       "months": [
