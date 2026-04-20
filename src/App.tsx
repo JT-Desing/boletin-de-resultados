@@ -98,6 +98,7 @@ const styles = `
   .top-right { text-align: right; }
   .state-pill { display: inline-flex; border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 800; }
   .state-green { background: #bfeac0; color: #51914f; }
+  .state-yellow { background: #f4e2a4; color: #8a6410; }
   .state-red { background: #f8b8bb; color: #d7333b; }
   .state-line-green { color: #5f9d5e; font-size: 14px; font-weight: 800; margin-top: 8px; }
   .state-line-red { color: #d84d57; font-size: 14px; font-weight: 800; margin-top: 8px; }
@@ -967,6 +968,43 @@ function formatSharePercent(value) {
   })}%`;
 }
 
+function parsePercentValue(value) {
+  const match = String(value ?? "")
+    .replace(",", ".")
+    .match(/-?\d+(?:\.\d+)?/);
+  if (!match) return undefined;
+  const parsed = Number(match[0]);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
+
+function getIndicatorKind(label) {
+  const text = String(label ?? "").toLowerCase();
+  if (
+    text.includes("costo") ||
+    text.includes("costos") ||
+    text.includes("gasto") ||
+    text.includes("gastos")
+  ) {
+    return "inverse";
+  }
+  return "standard";
+}
+
+function getSemaphoreTone(value, indicatorKind = "standard") {
+  const percent = parsePercentValue(value);
+  if (percent === undefined) return "gray";
+
+  if (indicatorKind === "inverse") {
+    if (percent > 99.5) return "red";
+    if (percent > 89.5) return "yellow";
+    return "green";
+  }
+
+  if (percent > 99.5) return "green";
+  if (percent > 89.5) return "yellow";
+  return "red";
+}
+
 function getHeaderCutLabel(selectedPeriods) {
   if (!selectedPeriods?.length)
     return { top: "CORTE", main: "SIN DATOS", bottom: "----" };
@@ -1185,6 +1223,8 @@ function DeltaPill({ text, tone }) {
 }
 
 function IncomeCard({ item }) {
+  const metaTone = getSemaphoreTone(item.meta, getIndicatorKind(item.title));
+
   return (
     <div className="income-card hover-card">
       <div className="income-title">{item.title}</div>
@@ -1196,7 +1236,7 @@ function IncomeCard({ item }) {
       <div className="income-value">{item.value}</div>
       <div className="pill-col">
         <DeltaPill text={item.delta} tone={item.deltaTone} />
-        <DeltaPill text={item.meta} tone={item.metaTone} />
+        <DeltaPill text={item.meta} tone={metaTone} />
       </div>
     </div>
   );
@@ -1266,6 +1306,8 @@ function TinyLineChart({ data }) {
 }
 
 function MarginBox({ item, currentLabel }) {
+  const pillTone = getSemaphoreTone(item.pill, getIndicatorKind(item.title));
+
   return (
     <div className="margin-box hover-card">
       <div
@@ -1285,7 +1327,9 @@ function MarginBox({ item, currentLabel }) {
           <div
             className={cn(
               "state-pill",
-              item.pillTone === "green" ? "state-green" : "state-red"
+              pillTone === "green" && "state-green",
+              pillTone === "yellow" && "state-yellow",
+              pillTone === "red" && "state-red"
             )}
           >
             {item.pill}
@@ -1346,13 +1390,8 @@ function TableBlock({ rows, periodKey }) {
     `Variación ${currentLabel} vs ${previousLabel}`,
   ];
 
-  const getComplianceTone = (val) => {
-    const n = parseFloat(String(val).replace("%", ""));
-    if (Number.isNaN(n)) return "gray";
-    if (n >= 100) return "green";
-    if (n >= 85) return "yellow";
-    return "red";
-  };
+  const getComplianceTone = (val, rowLabel) =>
+    getSemaphoreTone(val, getIndicatorKind(rowLabel));
 
   const getVariationTone = (val) => {
     const n = parseFloat(String(val).replace("%", ""));
@@ -1398,7 +1437,7 @@ function TableBlock({ rows, periodKey }) {
                       </td>
                     );
                   if (cidx === 3 || cidx === 6) {
-                    const tone = getComplianceTone(cell);
+                    const tone = getComplianceTone(cell, row[0]);
                     return (
                       <td key={cidx}>
                         <span className={cn("table-pill", tone)}>
@@ -2095,7 +2134,7 @@ function IngresosPage({
                 />
                 <HelperBox
                   title="Cumplimiento vs presupuesto"
-                  text={`Negro = meta presupuestada de ${currentShort}. Verde = cumple o supera; amarillo = cerca; rojo = por debajo del objetivo.`}
+                  text={`Semáforo ingresos, márgenes y resultado: verde >99,5%; amarillo >89,5% hasta 99,5%; rojo <=89,5%. En costos y gastos se invierte: rojo >99,5%; amarillo >89,5% hasta 99,5%; verde <=89,5%.`}
                   tone="yellow"
                   icon={Gauge}
                 />
