@@ -38,6 +38,8 @@ jobs:
         run: |
           if [ -f data/boletin.xlsx ]; then
             python scripts/sync_spreadsheet_to_json.py data/boletin.xlsx public/data/boletin-data.json
+          elif [ -f data/boletin-updated.csv ]; then
+            python scripts/sync_spreadsheet_to_json.py data/boletin-updated.csv public/data/boletin-data.json
           elif [ -f data/boletin.csv ]; then
             python scripts/sync_spreadsheet_to_json.py data/boletin.csv public/data/boletin-data.json
           else

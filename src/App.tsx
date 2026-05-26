@@ -1497,16 +1497,24 @@ function MonthActivationCard({ item }) {
   );
 }
 
-function SmallRedTable({ title, rows }) {
+function SmallRedTable({ title, rows, periodLabels = [] }) {
+  const maxPeriods = rows.reduce(
+    (largest, row) => Math.max(largest, Math.max(0, row.length - 1)),
+    0
+  );
+  const headers = periodLabels.length
+    ? periodLabels.slice(-maxPeriods)
+    : Array.from({ length: maxPeriods }, (_, index) => `Periodo ${index + 1}`);
+
   return (
     <div className="mini-table-wrap">
       <table className="mini-table" style={{ width: "100%" }}>
         <thead>
           <tr>
             <th>{title}</th>
-            <th>Ene-26</th>
-            <th>Feb-26</th>
-            <th>Mar-26</th>
+            {headers.map((label) => (
+              <th key={label}>{label}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
@@ -2194,10 +2202,12 @@ function VinculacionPage({
                 <SmallRedTable
                   title="Agregador"
                   rows={data.vinculacion.agregador}
+                  periodLabels={data.vinculacion.months.map((item) => item.label)}
                 />
                 <SmallRedTable
                   title="Gateway"
                   rows={data.vinculacion.gateway}
+                  periodLabels={data.vinculacion.months.map((item) => item.label)}
                 />
               </div>
             </PageCard>
@@ -2360,7 +2370,6 @@ export default function App() {
     [activeDataByPeriod]
   );
   const defaultPeriod = useMemo(() => {
-    if (availablePeriods.includes("2026-02")) return "2026-02";
     if (availablePeriods.length) return availablePeriods[availablePeriods.length - 1];
     return undefined;
   }, [availablePeriods]);
