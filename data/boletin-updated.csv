@@ -799,75 +799,75 @@ period,path,type,value
 2026-04,ingresos.cards[0].title,string,Ingresos Agregador
 2026-04,ingresos.cards[0].value,string,"$650,4 M"
 2026-04,ingresos.cards[0].delta,string,"-3,9 % vs mar"
-2026-04,ingresos.cards[0].meta,string,"46,3 % de meta"
+2026-04,ingresos.cards[0].meta,string,"46,3% de meta"
 2026-04,ingresos.cards[0].deltaTone,string,red
 2026-04,ingresos.cards[0].metaTone,string,red
 2026-04,ingresos.cards[1].title,string,Ingresos Gateway
 2026-04,ingresos.cards[1].value,string,"$592,7 M"
-2026-04,ingresos.cards[1].subtitle,string,Afiliaciones + transacciones
 2026-04,ingresos.cards[1].delta,string,"+3,2 % vs mar"
-2026-04,ingresos.cards[1].meta,string,"65,2 % de meta"
+2026-04,ingresos.cards[1].meta,string,"65,2% de meta"
 2026-04,ingresos.cards[1].deltaTone,string,green
 2026-04,ingresos.cards[1].metaTone,string,red
+2026-04,ingresos.cards[1].subtitle,string,Afiliaciones + transacciones
 2026-04,ingresos.cards[2].title,string,Otras líneas
 2026-04,ingresos.cards[2].value,string,"$123,7 M"
 2026-04,ingresos.cards[2].delta,string,"-20,1 % vs mar"
-2026-04,ingresos.cards[2].meta,string,"78,4 % de meta"
+2026-04,ingresos.cards[2].meta,string,"78,4% de meta"
 2026-04,ingresos.cards[2].deltaTone,string,red
 2026-04,ingresos.cards[2].metaTone,string,red
 2026-04,ingresos.cards[3].title,string,Ingreso total
 2026-04,ingresos.cards[3].value,string,"$1.363,8 M"
 2026-04,ingresos.cards[3].delta,string,"-1,8 % vs mar"
-2026-04,ingresos.cards[3].meta,string,"35,3 % de meta"
+2026-04,ingresos.cards[3].meta,string,"35,3% de meta"
 2026-04,ingresos.cards[3].deltaTone,string,red
 2026-04,ingresos.cards[3].metaTone,string,red
 2026-04,ingresos.summary.total,string,"$1363,8 M"
 2026-04,ingresos.summary.delta,string,"-1,8%"
 2026-04,ingresos.summary.cumplimiento,string,"Cumpl. 35,3%"
-2026-04,ingresos.summary.ene,string,"$1389,0 M"
-2026-04,ingresos.summary.ppto,string,"$3861,7 M"
+2026-04,ingresos.summary.ene,string,"$1.389,0 M"
+2026-04,ingresos.summary.ppto,string,"$3.861,7 M"
 2026-04,ingresos.margins[0].title,string,Margen bruto
 2026-04,ingresos.margins[0].real,string,"$937,3 M"
 2026-04,ingresos.margins[0].ppto,string,"$1.001,5 M"
-2026-04,ingresos.margins[0].pill,string,"93,6 %"
-2026-04,ingresos.margins[0].pillTone,string,red
+2026-04,ingresos.margins[0].pill,string,"93,6%"
+2026-04,ingresos.margins[0].pillTone,string,yellow
 2026-04,ingresos.margins[0].vsText,string,"+0,3%"
 2026-04,ingresos.margins[0].vsTone,string,green
-2026-04,ingresos.margins[0].note,string,"Variación absoluta vs meta: -$64,2 M"
+2026-04,ingresos.margins[0].note,string,"Variación absoluta vs meta: $-64,2 M"
 2026-04,ingresos.margins[0].series[0].name,string,MAR
-2026-04,ingresos.margins[0].series[0].value,number,934.9
+2026-04,ingresos.margins[0].series[0].value,number,9348
 2026-04,ingresos.margins[0].series[1].name,string,ABR REAL
-2026-04,ingresos.margins[0].series[1].value,number,937.3
+2026-04,ingresos.margins[0].series[1].value,number,9372
 2026-04,ingresos.margins[0].series[2].name,string,PPTO
-2026-04,ingresos.margins[0].series[2].value,number,1001.5
+2026-04,ingresos.margins[0].series[2].value,number,10015
 2026-04,ingresos.margins[1].title,string,Margen EBITDA
-2026-04,ingresos.margins[1].real,string,"-$346,4 M"
-2026-04,ingresos.margins[1].ppto,string,"-$628,5 M"
-2026-04,ingresos.margins[1].pill,string,"55,1 %"
+2026-04,ingresos.margins[1].real,string,"$-346,4 M"
+2026-04,ingresos.margins[1].ppto,string,"$-628,5 M"
+2026-04,ingresos.margins[1].pill,string,"55,1%"
 2026-04,ingresos.margins[1].pillTone,string,red
 2026-04,ingresos.margins[1].vsText,string,"-10,7%"
 2026-04,ingresos.margins[1].vsTone,string,red
-2026-04,ingresos.margins[1].note,string,"Variación absoluta vs meta: +$282,1 M"
+2026-04,ingresos.margins[1].note,string,"Variación absoluta vs meta: $282,1 M"
 2026-04,ingresos.margins[1].series[0].name,string,MAR
-2026-04,ingresos.margins[1].series[0].value,number,-388.0
+2026-04,ingresos.margins[1].series[0].value,number,-3880
 2026-04,ingresos.margins[1].series[1].name,string,ABR REAL
-2026-04,ingresos.margins[1].series[1].value,number,-346.4
+2026-04,ingresos.margins[1].series[1].value,number,-3464
 2026-04,ingresos.margins[1].series[2].name,string,PPTO
-2026-04,ingresos.margins[1].series[2].value,number,-628.5
+2026-04,ingresos.margins[1].series[2].value,number,-6285
 2026-04,ingresos.margins[2].title,string,Margen neto
-2026-04,ingresos.margins[2].real,string,"-$425,8 M"
-2026-04,ingresos.margins[2].ppto,string,"-$642,6 M"
-2026-04,ingresos.margins[2].pill,string,"66,3 %"
+2026-04,ingresos.margins[2].real,string,"$-425,8 M"
+2026-04,ingresos.margins[2].ppto,string,"$-642,6 M"
+2026-04,ingresos.margins[2].pill,string,"66,3%"
 2026-04,ingresos.margins[2].pillTone,string,red
 2026-04,ingresos.margins[2].vsText,string,"-2,4%"
 2026-04,ingresos.margins[2].vsTone,string,red
-2026-04,ingresos.margins[2].note,string,"Variación absoluta vs meta: +$216,8 M"
+2026-04,ingresos.margins[2].note,string,"Variación absoluta vs meta: $216,8 M"
 2026-04,ingresos.margins[2].series[0].name,string,MAR
-2026-04,ingresos.margins[2].series[0].value,number,-436.1
+2026-04,ingresos.margins[2].series[0].value,number,-4361
 2026-04,ingresos.margins[2].series[1].name,string,ABR REAL
-2026-04,ingresos.margins[2].series[1].value,number,-425.8
+2026-04,ingresos.margins[2].series[1].value,number,-4258
 2026-04,ingresos.margins[2].series[2].name,string,PPTO
-2026-04,ingresos.margins[2].series[2].value,number,-642.6
+2026-04,ingresos.margins[2].series[2].value,number,-6425
 2026-04,ingresos.table[0][0],string,Ingresos total
 2026-04,ingresos.table[0][1],string,"$1.389,0 M"
 2026-04,ingresos.table[0][2],string,"$1.611,2 M"
@@ -875,7 +875,7 @@ period,path,type,value
 2026-04,ingresos.table[0][4],string,"$1.363,8 M"
 2026-04,ingresos.table[0][5],string,"$3.861,7 M"
 2026-04,ingresos.table[0][6],string,"35,3%"
-2026-04,ingresos.table[0][7],string,-18%
+2026-04,ingresos.table[0][7],string,"-1,8%"
 2026-04,ingresos.table[1][0],string,ePayco pagos Agregador
 2026-04,ingresos.table[1][1],string,"$677,0 M"
 2026-04,ingresos.table[1][2],string,"$864,2 M"
@@ -883,7 +883,7 @@ period,path,type,value
 2026-04,ingresos.table[1][4],string,"$650,4 M"
 2026-04,ingresos.table[1][5],string,"$1.405,2 M"
 2026-04,ingresos.table[1][6],string,"46,3%"
-2026-04,ingresos.table[1][7],string,-39%
+2026-04,ingresos.table[1][7],string,"-3,9%"
 2026-04,ingresos.table[2][0],string,ePayco pagos Gateway
 2026-04,ingresos.table[2][1],string,"$574,5 M"
 2026-04,ingresos.table[2][2],string,"$649,1 M"
@@ -891,7 +891,7 @@ period,path,type,value
 2026-04,ingresos.table[2][4],string,"$592,7 M"
 2026-04,ingresos.table[2][5],string,"$909,1 M"
 2026-04,ingresos.table[2][6],string,"65,2%"
-2026-04,ingresos.table[2][7],string,32%
+2026-04,ingresos.table[2][7],string,"+3,2%"
 2026-04,ingresos.table[3][0],string,ePayco Recaudo
 2026-04,ingresos.table[3][1],string,"$50,5 M"
 2026-04,ingresos.table[3][2],string,"$48,1 M"
@@ -899,7 +899,7 @@ period,path,type,value
 2026-04,ingresos.table[3][4],string,"$18,0 M"
 2026-04,ingresos.table[3][5],string,"$16,4 M"
 2026-04,ingresos.table[3][6],string,"109,7%"
-2026-04,ingresos.table[3][7],string,-642%
+2026-04,ingresos.table[3][7],string,"-64,2%"
 2026-04,ingresos.table[4][0],string,Suscripciones
 2026-04,ingresos.table[4][1],string,"$21,1 M"
 2026-04,ingresos.table[4][2],string,"$6,4 M"
@@ -907,7 +907,7 @@ period,path,type,value
 2026-04,ingresos.table[4][4],string,"$5,9 M"
 2026-04,ingresos.table[4][5],string,"$2,9 M"
 2026-04,ingresos.table[4][6],string,"201,0%"
-2026-04,ingresos.table[4][7],string,-722%
+2026-04,ingresos.table[4][7],string,"-72,2%"
 2026-04,ingresos.table[5][0],string,ePayco Control
 2026-04,ingresos.table[5][1],string,"$58,3 M"
 2026-04,ingresos.table[5][2],string,"$50,0 M"
@@ -915,7 +915,7 @@ period,path,type,value
 2026-04,ingresos.table[5][4],string,"$50,3 M"
 2026-04,ingresos.table[5][5],string,"$66,9 M"
 2026-04,ingresos.table[5][6],string,"75,2%"
-2026-04,ingresos.table[5][7],string,-138%
+2026-04,ingresos.table[5][7],string,"-13,8%"
 2026-04,ingresos.table[6][0],string,ePayco Paypal
 2026-04,ingresos.table[6][1],string,"$5,2 M"
 2026-04,ingresos.table[6][2],string,"$24,1 M"
@@ -923,7 +923,7 @@ period,path,type,value
 2026-04,ingresos.table[6][4],string,"$21,6 M"
 2026-04,ingresos.table[6][5],string,"$25,5 M"
 2026-04,ingresos.table[6][6],string,"84,7%"
-2026-04,ingresos.table[6][7],string,3140%
+2026-04,ingresos.table[6][7],string,"+314,0%"
 2026-04,ingresos.table[7][0],string,ePayco shops
 2026-04,ingresos.table[7][1],string,"$0,7 M"
 2026-04,ingresos.table[7][2],string,"$0,2 M"
@@ -931,15 +931,15 @@ period,path,type,value
 2026-04,ingresos.table[7][4],string,"$0,2 M"
 2026-04,ingresos.table[7][5],string,"$0,2 M"
 2026-04,ingresos.table[7][6],string,"92,9%"
-2026-04,ingresos.table[7][7],string,-679%
+2026-04,ingresos.table[7][7],string,"-67,9%"
 2026-04,ingresos.table[8][0],string,ePayco PayOuts
 2026-04,ingresos.table[8][1],string,"$0,0 M"
 2026-04,ingresos.table[8][2],string,"$0,1 M"
 2026-04,ingresos.table[8][3],string,"41,1%"
 2026-04,ingresos.table[8][4],string,"$0,1 M"
 2026-04,ingresos.table[8][5],string,"$0,2 M"
-2026-04,ingresos.table[8][6],string,"141,1%"
-2026-04,ingresos.table[8][7],string,2500%
+2026-04,ingresos.table[8][6],string,"38,6%"
+2026-04,ingresos.table[8][7],string,"+250,0%"
 2026-04,vinculacion.months[0].label,string,Ene-26
 2026-04,vinculacion.months[0].fact,string,"Fact. $5,9 M"
 2026-04,vinculacion.months[0].activacion,string,19%
@@ -1007,28 +1007,28 @@ period,path,type,value
 2026-04,vinculacion.kpiAgregador[0].title,string,#Transacciones
 2026-04,vinculacion.kpiAgregador[0].real,string,"89,54 mil"
 2026-04,vinculacion.kpiAgregador[0].meta,string,"186,24 mil"
-2026-04,vinculacion.kpiAgregador[0].cumplimiento,string,"48,08%"
+2026-04,vinculacion.kpiAgregador[0].cumplimiento,string,48%
 2026-04,vinculacion.kpiAgregador[0].realPrev,string,"100,14 mil"
 2026-04,vinculacion.kpiAgregador[0].metaPrev,string,"113,99 mil"
 2026-04,vinculacion.kpiAgregador[0].tone,string,red
 2026-04,vinculacion.kpiAgregador[1].title,string,$ Dinero operado
 2026-04,vinculacion.kpiAgregador[1].real,string,"$21,60 mil M"
 2026-04,vinculacion.kpiAgregador[1].meta,string,"$46,23 mil M"
-2026-04,vinculacion.kpiAgregador[1].cumplimiento,string,"46,72%"
+2026-04,vinculacion.kpiAgregador[1].cumplimiento,string,47%
 2026-04,vinculacion.kpiAgregador[1].realPrev,string,"$23,98 mil M"
 2026-04,vinculacion.kpiAgregador[1].metaPrev,string,"$28,29 mil M"
 2026-04,vinculacion.kpiAgregador[1].tone,string,red
 2026-04,vinculacion.kpiAgregador[2].title,string,Ticket promedio
 2026-04,vinculacion.kpiAgregador[2].real,string,"$241,18 mil"
 2026-04,vinculacion.kpiAgregador[2].meta,string,"$248,21 mil"
-2026-04,vinculacion.kpiAgregador[2].cumplimiento,string,"97,17%"
+2026-04,vinculacion.kpiAgregador[2].cumplimiento,string,97%
 2026-04,vinculacion.kpiAgregador[2].realPrev,string,"$239,52 mil"
 2026-04,vinculacion.kpiAgregador[2].metaPrev,string,"$248,21 mil"
-2026-04,vinculacion.kpiAgregador[2].tone,string,green
+2026-04,vinculacion.kpiAgregador[2].tone,string,yellow
 2026-04,vinculacion.kpiAgregador[3].title,string,Clientes transaccionales
 2026-04,vinculacion.kpiAgregador[3].real,string,"2,58 mil"
 2026-04,vinculacion.kpiAgregador[3].meta,string,"5,64 mil"
-2026-04,vinculacion.kpiAgregador[3].cumplimiento,string,"45,77%"
+2026-04,vinculacion.kpiAgregador[3].cumplimiento,string,46%
 2026-04,vinculacion.kpiAgregador[3].realPrev,string,"2,62 mil"
 2026-04,vinculacion.kpiAgregador[3].metaPrev,string,"3,45 mil"
 2026-04,vinculacion.kpiAgregador[3].tone,string,red
@@ -1087,6 +1087,8 @@ period,path,type,value
 2026-04,transaccionales.churnAgregador.activos[2].value,number,3501
 2026-04,transaccionales.churnAgregador.activos[3].name,string,Abr
 2026-04,transaccionales.churnAgregador.activos[3].value,number,3524
+2026-04,transaccionales.churnAgregador.activos[4].name,string,May
+2026-04,transaccionales.churnAgregador.activos[4].value,number,3503
 2026-04,transaccionales.churnAgregador.churn[0].name,string,Ene
 2026-04,transaccionales.churnAgregador.churn[0].value,number,192
 2026-04,transaccionales.churnAgregador.churn[0].rate,string,"5,00%"
@@ -1099,6 +1101,9 @@ period,path,type,value
 2026-04,transaccionales.churnAgregador.churn[3].name,string,Abr
 2026-04,transaccionales.churnAgregador.churn[3].value,number,23
 2026-04,transaccionales.churnAgregador.churn[3].rate,string,"0,65%"
+2026-04,transaccionales.churnAgregador.churn[4].name,string,May
+2026-04,transaccionales.churnAgregador.churn[4].value,number,21
+2026-04,transaccionales.churnAgregador.churn[4].rate,string,"0,60%"
 2026-04,transaccionales.churnAgregador.nuevos[0].name,string,Ene
 2026-04,transaccionales.churnAgregador.nuevos[0].value,number,50
 2026-04,transaccionales.churnAgregador.nuevos[1].name,string,Feb
@@ -1107,10 +1112,12 @@ period,path,type,value
 2026-04,transaccionales.churnAgregador.nuevos[2].value,number,91
 2026-04,transaccionales.churnAgregador.nuevos[3].name,string,Abr
 2026-04,transaccionales.churnAgregador.nuevos[3].value,number,39
-2026-04,transaccionales.churnAgregador.promedioActivos,string,3.629
-2026-04,transaccionales.churnAgregador.tasaMes,string,"0,65%"
-2026-04,transaccionales.churnAgregador.promedioChurn,string,138
-2026-04,transaccionales.churnAgregador.promedioNuevos,string,68
+2026-04,transaccionales.churnAgregador.nuevos[4].name,string,May
+2026-04,transaccionales.churnAgregador.nuevos[4].value,number,54
+2026-04,transaccionales.churnAgregador.promedioActivos,string,3.604
+2026-04,transaccionales.churnAgregador.tasaMes,string,"0,60%"
+2026-04,transaccionales.churnAgregador.promedioChurn,string,114
+2026-04,transaccionales.churnAgregador.promedioNuevos,string,65
 2026-04,transaccionales.churnGateway.activos[0].name,string,Ene
 2026-04,transaccionales.churnGateway.activos[0].value,number,7339
 2026-04,transaccionales.churnGateway.activos[1].name,string,Feb
@@ -1153,52 +1160,60 @@ period,path,type,value
 2026-04,nps.metas[3].title,string,Meta TDP
 2026-04,nps.metas[3].value,string,4h
 2026-04,nps.metas[3].color,string,#f1a10a
-2026-04,nps.months[0].month,string,Marzo
-2026-04,nps.months[0].code,string,2026-3
-2026-04,nps.months[0].insight,string,"Continúa la mejora de NPS y SSA. TEP se mantiene sobre meta. TDP mejora, pero aún no cumple el estándar."
+2026-04,nps.months[0].month,string,Abril
+2026-04,nps.months[0].code,string,2026-4
+2026-04,nps.months[0].insight,string,NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.
 2026-04,nps.months[0].metrics[0].label,string,NPS
-2026-04,nps.months[0].metrics[0].value,string,"56,5"
-2026-04,nps.months[0].metrics[0].progress,number,63
-2026-04,nps.months[0].metrics[0].color,string,#ff1d25
-2026-04,nps.months[0].metrics[0].trend,string,Ascendente
-2026-04,nps.months[0].metrics[1].label,string,TEP
-2026-04,nps.months[0].metrics[1].value,string,"6,3 min"
-2026-04,nps.months[0].metrics[1].progress,number,159
-2026-04,nps.months[0].metrics[1].color,string,#20a751
-2026-04,nps.months[0].metrics[1].trend,string,Ascendente
-2026-04,nps.months[0].metrics[2].label,string,SSA
-2026-04,nps.months[0].metrics[2].value,string,"62,5"
-2026-04,nps.months[0].metrics[2].progress,number,69
-2026-04,nps.months[0].metrics[2].color,string,#15516f
-2026-04,nps.months[0].metrics[2].trend,string,Ascendente
+2026-04,nps.months[0].metrics[0].value,string,"52,1"
+2026-04,nps.months[0].metrics[0].trend,string,↓
+2026-04,nps.months[0].metrics[0].trendTone,string,down
+2026-04,nps.months[0].metrics[0].progress,number,58
+2026-04,nps.months[0].metrics[0].color,string,#ef5a5a
+2026-04,nps.months[0].metrics[1].label,string,SSA
+2026-04,nps.months[0].metrics[1].value,string,"57,3"
+2026-04,nps.months[0].metrics[1].trend,string,↓
+2026-04,nps.months[0].metrics[1].trendTone,string,down
+2026-04,nps.months[0].metrics[1].progress,number,64
+2026-04,nps.months[0].metrics[1].color,string,#15516f
+2026-04,nps.months[0].metrics[2].label,string,TEP
+2026-04,nps.months[0].metrics[2].value,string,"2,9min"
+2026-04,nps.months[0].metrics[2].trend,string,↓
+2026-04,nps.months[0].metrics[2].trendTone,string,up
+2026-04,nps.months[0].metrics[2].progress,number,345
+2026-04,nps.months[0].metrics[2].color,string,#20a751
 2026-04,nps.months[0].metrics[3].label,string,TDP
-2026-04,nps.months[0].metrics[3].value,string,"24,0h"
-2026-04,nps.months[0].metrics[3].progress,number,17
-2026-04,nps.months[0].metrics[3].color,string,#ff1d25
-2026-04,nps.months[0].metrics[3].trend,string,Ascendente
+2026-04,nps.months[0].metrics[3].value,string,"38,4h"
+2026-04,nps.months[0].metrics[3].trend,string,↑
+2026-04,nps.months[0].metrics[3].trendTone,string,down
+2026-04,nps.months[0].metrics[3].progress,number,10
+2026-04,nps.months[0].metrics[3].color,string,#f1a10a
 2026-04,nps.months[1].month,string,Abril
 2026-04,nps.months[1].code,string,2026-4
-2026-04,nps.months[1].insight,string,NPS y SSA retroceden frente a marzo. TEP mejora de forma importante y supera la meta; TDP empeora y se aleja del estandar esperado.
+2026-04,nps.months[1].insight,string,NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.
 2026-04,nps.months[1].metrics[0].label,string,NPS
 2026-04,nps.months[1].metrics[0].value,string,"52,1"
+2026-04,nps.months[1].metrics[0].trend,string,↓
+2026-04,nps.months[1].metrics[0].trendTone,string,down
 2026-04,nps.months[1].metrics[0].progress,number,58
-2026-04,nps.months[1].metrics[0].color,string,#ff1d25
-2026-04,nps.months[1].metrics[0].trend,string,Descendente
-2026-04,nps.months[1].metrics[1].label,string,TEP
-2026-04,nps.months[1].metrics[1].value,string,"2,9 min"
-2026-04,nps.months[1].metrics[1].progress,number,345
-2026-04,nps.months[1].metrics[1].color,string,#20a751
-2026-04,nps.months[1].metrics[1].trend,string,Descendente
-2026-04,nps.months[1].metrics[2].label,string,SSA
-2026-04,nps.months[1].metrics[2].value,string,"57,3"
-2026-04,nps.months[1].metrics[2].progress,number,64
-2026-04,nps.months[1].metrics[2].color,string,#15516f
-2026-04,nps.months[1].metrics[2].trend,string,Descendente
+2026-04,nps.months[1].metrics[0].color,string,#ef5a5a
+2026-04,nps.months[1].metrics[1].label,string,SSA
+2026-04,nps.months[1].metrics[1].value,string,"57,3"
+2026-04,nps.months[1].metrics[1].trend,string,↓
+2026-04,nps.months[1].metrics[1].trendTone,string,down
+2026-04,nps.months[1].metrics[1].progress,number,64
+2026-04,nps.months[1].metrics[1].color,string,#15516f
+2026-04,nps.months[1].metrics[2].label,string,TEP
+2026-04,nps.months[1].metrics[2].value,string,"2,9min"
+2026-04,nps.months[1].metrics[2].trend,string,↓
+2026-04,nps.months[1].metrics[2].trendTone,string,up
+2026-04,nps.months[1].metrics[2].progress,number,345
+2026-04,nps.months[1].metrics[2].color,string,#20a751
 2026-04,nps.months[1].metrics[3].label,string,TDP
 2026-04,nps.months[1].metrics[3].value,string,"38,4h"
+2026-04,nps.months[1].metrics[3].trend,string,↑
+2026-04,nps.months[1].metrics[3].trendTone,string,down
 2026-04,nps.months[1].metrics[3].progress,number,10
-2026-04,nps.months[1].metrics[3].color,string,#ff1d25
-2026-04,nps.months[1].metrics[3].trend,string,Ascendente
+2026-04,nps.months[1].metrics[3].color,string,#f1a10a
 2026-04,nps.glossary[0].dot,string,#ff1d25
 2026-04,nps.glossary[0].title,string,NPS
 2026-04,nps.glossary[0].text,string,Net Promoter Score. Mide qué tan dispuestos están los usuarios a recomendar el servicio.
@@ -1217,3 +1232,447 @@ period,path,type,value
 2026-04,nps.glossary[5].dot,string,#f1a10a
 2026-04,nps.glossary[5].title,string,TDP
 2026-04,nps.glossary[5].text,string,Tiempo de Duración Promedio.
+2026-05,corteMes,string,MAYO
+2026-05,corteAnio,string,2026
+2026-05,ingresos.cards[0].title,string,Ingresos Agregador
+2026-05,ingresos.cards[0].value,string,"$678,4 M"
+2026-05,ingresos.cards[0].delta,string,"+4,3 % vs abr"
+2026-05,ingresos.cards[0].meta,string,"43,2% de meta"
+2026-05,ingresos.cards[0].deltaTone,string,green
+2026-05,ingresos.cards[0].metaTone,string,red
+2026-05,ingresos.cards[1].title,string,Ingresos Gateway
+2026-05,ingresos.cards[1].value,string,"$906,6 M"
+2026-05,ingresos.cards[1].delta,string,"+53,0 % vs abr"
+2026-05,ingresos.cards[1].meta,string,"89,4% de meta"
+2026-05,ingresos.cards[1].deltaTone,string,green
+2026-05,ingresos.cards[1].metaTone,string,red
+2026-05,ingresos.cards[1].subtitle,string,Afiliaciones + transacciones
+2026-05,ingresos.cards[2].title,string,Otras líneas
+2026-05,ingresos.cards[2].value,string,"$155,8 M"
+2026-05,ingresos.cards[2].delta,string,"+25,9 % vs abr"
+2026-05,ingresos.cards[2].meta,string,"78,4% de meta"
+2026-05,ingresos.cards[2].deltaTone,string,green
+2026-05,ingresos.cards[2].metaTone,string,red
+2026-05,ingresos.cards[3].title,string,Ingreso total
+2026-05,ingresos.cards[3].value,string,"$1.693,5 M"
+2026-05,ingresos.cards[3].delta,string,"+24,2 % vs abr"
+2026-05,ingresos.cards[3].meta,string,"49,1% de meta"
+2026-05,ingresos.cards[3].deltaTone,string,green
+2026-05,ingresos.cards[3].metaTone,string,red
+2026-05,ingresos.summary.total,string,"$1693,5 M"
+2026-05,ingresos.summary.delta,string,"+24,2%"
+2026-05,ingresos.summary.cumplimiento,string,"Cumpl. 49,1%"
+2026-05,ingresos.summary.ene,string,"$1.363,8 M"
+2026-05,ingresos.summary.ppto,string,"$3.447,2 M"
+2026-05,ingresos.margins[0].title,string,Margen bruto
+2026-05,ingresos.margins[0].real,string,"$1.249,0 M"
+2026-05,ingresos.margins[0].ppto,string,"$1.001,5 M"
+2026-05,ingresos.margins[0].pill,string,"124,7%"
+2026-05,ingresos.margins[0].pillTone,string,green
+2026-05,ingresos.margins[0].vsText,string,"+33,3%"
+2026-05,ingresos.margins[0].vsTone,string,green
+2026-05,ingresos.margins[0].note,string,"Variación absoluta vs meta: $247,5 M"
+2026-05,ingresos.margins[0].series[0].name,string,ABR
+2026-05,ingresos.margins[0].series[0].value,number,9372
+2026-05,ingresos.margins[0].series[1].name,string,MAY REAL
+2026-05,ingresos.margins[0].series[1].value,number,12490
+2026-05,ingresos.margins[0].series[2].name,string,PPTO
+2026-05,ingresos.margins[0].series[2].value,number,10015
+2026-05,ingresos.margins[1].title,string,Margen EBITDA
+2026-05,ingresos.margins[1].real,string,"$-207,3 M"
+2026-05,ingresos.margins[1].ppto,string,"$-636,1 M"
+2026-05,ingresos.margins[1].pill,string,"32,6%"
+2026-05,ingresos.margins[1].pillTone,string,red
+2026-05,ingresos.margins[1].vsText,string,"-40,2%"
+2026-05,ingresos.margins[1].vsTone,string,red
+2026-05,ingresos.margins[1].note,string,"Variación absoluta vs meta: $428,8 M"
+2026-05,ingresos.margins[1].series[0].name,string,ABR
+2026-05,ingresos.margins[1].series[0].value,number,-3464
+2026-05,ingresos.margins[1].series[1].name,string,MAY REAL
+2026-05,ingresos.margins[1].series[1].value,number,-2073
+2026-05,ingresos.margins[1].series[2].name,string,PPTO
+2026-05,ingresos.margins[1].series[2].value,number,-6361
+2026-05,ingresos.margins[2].title,string,Margen neto
+2026-05,ingresos.margins[2].real,string,"$-293,2 M"
+2026-05,ingresos.margins[2].ppto,string,"$-650,2 M"
+2026-05,ingresos.margins[2].pill,string,"45,1%"
+2026-05,ingresos.margins[2].pillTone,string,red
+2026-05,ingresos.margins[2].vsText,string,"-31,1%"
+2026-05,ingresos.margins[2].vsTone,string,red
+2026-05,ingresos.margins[2].note,string,"Variación absoluta vs meta: $357,0 M"
+2026-05,ingresos.margins[2].series[0].name,string,ABR
+2026-05,ingresos.margins[2].series[0].value,number,-4258
+2026-05,ingresos.margins[2].series[1].name,string,MAY REAL
+2026-05,ingresos.margins[2].series[1].value,number,-2931
+2026-05,ingresos.margins[2].series[2].name,string,PPTO
+2026-05,ingresos.margins[2].series[2].value,number,-6501
+2026-05,ingresos.table[0][0],string,Ingresos total
+2026-05,ingresos.table[0][1],string,"$1.363,8 M"
+2026-05,ingresos.table[0][2],string,"$3.861,7 M"
+2026-05,ingresos.table[0][3],string,"35,3%"
+2026-05,ingresos.table[0][4],string,"$1.693,5 M"
+2026-05,ingresos.table[0][5],string,"$3.447,2 M"
+2026-05,ingresos.table[0][6],string,"49,1%"
+2026-05,ingresos.table[0][7],string,"+24,2%"
+2026-05,ingresos.table[1][0],string,ePayco pagos Agregador
+2026-05,ingresos.table[1][1],string,"$650,4 M"
+2026-05,ingresos.table[1][2],string,"$1.405,2 M"
+2026-05,ingresos.table[1][3],string,"46,3%"
+2026-05,ingresos.table[1][4],string,"$678,4 M"
+2026-05,ingresos.table[1][5],string,"$1.571,3 M"
+2026-05,ingresos.table[1][6],string,"43,2%"
+2026-05,ingresos.table[1][7],string,"+4,3%"
+2026-05,ingresos.table[2][0],string,ePayco pagos Gateway
+2026-05,ingresos.table[2][1],string,"$592,7 M"
+2026-05,ingresos.table[2][2],string,"$909,1 M"
+2026-05,ingresos.table[2][3],string,"65,2%"
+2026-05,ingresos.table[2][4],string,"$906,6 M"
+2026-05,ingresos.table[2][5],string,"$1.014,1 M"
+2026-05,ingresos.table[2][6],string,"89,4%"
+2026-05,ingresos.table[2][7],string,"+53,0%"
+2026-05,ingresos.table[3][0],string,ePayco Recaudo
+2026-05,ingresos.table[3][1],string,"$18,0 M"
+2026-05,ingresos.table[3][2],string,"$16,4 M"
+2026-05,ingresos.table[3][3],string,"109,7%"
+2026-05,ingresos.table[3][4],string,"$27,8 M"
+2026-05,ingresos.table[3][5],string,"$21,6 M"
+2026-05,ingresos.table[3][6],string,"128,8%"
+2026-05,ingresos.table[3][7],string,"+54,2%"
+2026-05,ingresos.table[4][0],string,Suscripciones
+2026-05,ingresos.table[4][1],string,"$5,9 M"
+2026-05,ingresos.table[4][2],string,"$2,9 M"
+2026-05,ingresos.table[4][3],string,"201,0%"
+2026-05,ingresos.table[4][4],string,"$11,5 M"
+2026-05,ingresos.table[4][5],string,"$4,0 M"
+2026-05,ingresos.table[4][6],string,"284,3%"
+2026-05,ingresos.table[4][7],string,"+95,6%"
+2026-05,ingresos.table[5][0],string,ePayco Control
+2026-05,ingresos.table[5][1],string,"$50,3 M"
+2026-05,ingresos.table[5][2],string,"$66,9 M"
+2026-05,ingresos.table[5][3],string,"75,2%"
+2026-05,ingresos.table[5][4],string,"$88,0 M"
+2026-05,ingresos.table[5][5],string,"$93,3 M"
+2026-05,ingresos.table[5][6],string,"94,2%"
+2026-05,ingresos.table[5][7],string,"+75,0%"
+2026-05,ingresos.table[6][0],string,ePayco Paypal
+2026-05,ingresos.table[6][1],string,"$21,6 M"
+2026-05,ingresos.table[6][2],string,"$25,5 M"
+2026-05,ingresos.table[6][3],string,"84,7%"
+2026-05,ingresos.table[6][4],string,"$10,9 M"
+2026-05,ingresos.table[6][5],string,"$33,8 M"
+2026-05,ingresos.table[6][6],string,"32,3%"
+2026-05,ingresos.table[6][7],string,"-49,5%"
+2026-05,ingresos.table[7][0],string,ePayco shops
+2026-05,ingresos.table[7][1],string,"$0,2 M"
+2026-05,ingresos.table[7][2],string,"$0,2 M"
+2026-05,ingresos.table[7][3],string,"92,9%"
+2026-05,ingresos.table[7][4],string,"$0,4 M"
+2026-05,ingresos.table[7][5],string,"$0,6 M"
+2026-05,ingresos.table[7][6],string,"72,9%"
+2026-05,ingresos.table[7][7],string,"+102,0%"
+2026-05,ingresos.table[8][0],string,ePayco PayOuts
+2026-05,ingresos.table[8][1],string,"$0,1 M"
+2026-05,ingresos.table[8][2],string,"$0,2 M"
+2026-05,ingresos.table[8][3],string,"38,6%"
+2026-05,ingresos.table[8][4],string,"$0,1 M"
+2026-05,ingresos.table[8][5],string,"$1,0 M"
+2026-05,ingresos.table[8][6],string,"13,6%"
+2026-05,ingresos.table[8][7],string,"+60,0%"
+2026-05,vinculacion.months[0].label,string,Ene-26
+2026-05,vinculacion.months[0].fact,string,"Fact. $5,9 M"
+2026-05,vinculacion.months[0].activacion,string,19%
+2026-05,vinculacion.months[0].registros,string,1.796
+2026-05,vinculacion.months[0].vinc,string,847
+2026-05,vinculacion.months[0].ccios,string,162
+2026-05,vinculacion.months[1].label,string,Feb-26
+2026-05,vinculacion.months[1].fact,string,"Fact. $16,7 M"
+2026-05,vinculacion.months[1].activacion,string,29%
+2026-05,vinculacion.months[1].registros,string,2.361
+2026-05,vinculacion.months[1].vinc,string,1.308
+2026-05,vinculacion.months[1].ccios,string,375
+2026-05,vinculacion.months[2].label,string,Mar-26
+2026-05,vinculacion.months[2].fact,string,"Fact. $27,2 M"
+2026-05,vinculacion.months[2].activacion,string,17%
+2026-05,vinculacion.months[2].registros,string,2.905
+2026-05,vinculacion.months[2].vinc,string,1.571
+2026-05,vinculacion.months[2].ccios,string,268
+2026-05,vinculacion.months[3].label,string,Abr-26
+2026-05,vinculacion.months[3].fact,string,"Fact. $16,0 M"
+2026-05,vinculacion.months[3].activacion,string,21%
+2026-05,vinculacion.months[3].registros,string,2.679
+2026-05,vinculacion.months[3].vinc,string,1.313
+2026-05,vinculacion.months[3].ccios,string,278
+2026-05,vinculacion.months[4].label,string,May-26
+2026-05,vinculacion.months[4].fact,string,"Fact. $33,1 M"
+2026-05,vinculacion.months[4].activacion,string,1%
+2026-05,vinculacion.months[4].registros,string,2.474
+2026-05,vinculacion.months[4].vinc,string,1.258
+2026-05,vinculacion.months[4].ccios,string,176
+2026-05,vinculacion.agregador[0][0],string,Registros
+2026-05,vinculacion.agregador[0][1],string,1.093
+2026-05,vinculacion.agregador[0][2],string,1.228
+2026-05,vinculacion.agregador[0][3],string,1.528
+2026-05,vinculacion.agregador[0][4],string,1.518
+2026-05,vinculacion.agregador[1][0],string,Vinculaciones
+2026-05,vinculacion.agregador[1][1],string,156
+2026-05,vinculacion.agregador[1][2],string,190
+2026-05,vinculacion.agregador[1][3],string,218
+2026-05,vinculacion.agregador[1][4],string,189
+2026-05,vinculacion.agregador[2][0],string,Ccios Fact
+2026-05,vinculacion.agregador[2][1],string,39
+2026-05,vinculacion.agregador[2][2],string,51
+2026-05,vinculacion.agregador[2][3],string,64
+2026-05,vinculacion.agregador[2][4],string,42
+2026-05,vinculacion.agregador[3][0],string,% Activación
+2026-05,vinculacion.agregador[3][1],string,25%
+2026-05,vinculacion.agregador[3][2],string,27%
+2026-05,vinculacion.agregador[3][3],string,29%
+2026-05,vinculacion.agregador[3][4],string,22%
+2026-05,vinculacion.gateway[0][0],string,Registros
+2026-05,vinculacion.gateway[0][1],string,703
+2026-05,vinculacion.gateway[0][2],string,1.133
+2026-05,vinculacion.gateway[0][3],string,1.377
+2026-05,vinculacion.gateway[0][4],string,1.161
+2026-05,vinculacion.gateway[1][0],string,Vinculaciones
+2026-05,vinculacion.gateway[1][1],string,691
+2026-05,vinculacion.gateway[1][2],string,1.118
+2026-05,vinculacion.gateway[1][3],string,1.353
+2026-05,vinculacion.gateway[1][4],string,1.124
+2026-05,vinculacion.gateway[2][0],string,Ccios Fact
+2026-05,vinculacion.gateway[2][1],string,123
+2026-05,vinculacion.gateway[2][2],string,324
+2026-05,vinculacion.gateway[2][3],string,204
+2026-05,vinculacion.gateway[2][4],string,236
+2026-05,vinculacion.gateway[3][0],string,% Activación
+2026-05,vinculacion.gateway[3][1],string,18%
+2026-05,vinculacion.gateway[3][2],string,29%
+2026-05,vinculacion.gateway[3][3],string,15%
+2026-05,vinculacion.gateway[3][4],string,21%
+2026-05,vinculacion.kpiAgregador[0].title,string,#Transacciones
+2026-05,vinculacion.kpiAgregador[0].real,string,"93,49 mil"
+2026-05,vinculacion.kpiAgregador[0].meta,string,"208,25 mil"
+2026-05,vinculacion.kpiAgregador[0].cumplimiento,string,45%
+2026-05,vinculacion.kpiAgregador[0].realPrev,string,"89,54 mil"
+2026-05,vinculacion.kpiAgregador[0].metaPrev,string,"186,24 mil"
+2026-05,vinculacion.kpiAgregador[0].tone,string,red
+2026-05,vinculacion.kpiAgregador[1].title,string,$ Dinero operado
+2026-05,vinculacion.kpiAgregador[1].real,string,"$22,69 mil M"
+2026-05,vinculacion.kpiAgregador[1].meta,string,"$51,69 mil M"
+2026-05,vinculacion.kpiAgregador[1].cumplimiento,string,44%
+2026-05,vinculacion.kpiAgregador[1].realPrev,string,"$21,60 mil M"
+2026-05,vinculacion.kpiAgregador[1].metaPrev,string,"$46,23 mil M"
+2026-05,vinculacion.kpiAgregador[1].tone,string,red
+2026-05,vinculacion.kpiAgregador[2].title,string,Ticket promedio
+2026-05,vinculacion.kpiAgregador[2].real,string,"$242,74 mil"
+2026-05,vinculacion.kpiAgregador[2].meta,string,"$248,21 mil"
+2026-05,vinculacion.kpiAgregador[2].cumplimiento,string,98%
+2026-05,vinculacion.kpiAgregador[2].realPrev,string,"$241,18 mil"
+2026-05,vinculacion.kpiAgregador[2].metaPrev,string,"$248,21 mil"
+2026-05,vinculacion.kpiAgregador[2].tone,string,yellow
+2026-05,vinculacion.kpiAgregador[3].title,string,Clientes transaccionales
+2026-05,vinculacion.kpiAgregador[3].real,string,"2,55 mil"
+2026-05,vinculacion.kpiAgregador[3].meta,string,"6,31 mil"
+2026-05,vinculacion.kpiAgregador[3].cumplimiento,string,40%
+2026-05,vinculacion.kpiAgregador[3].realPrev,string,"2,58 mil"
+2026-05,vinculacion.kpiAgregador[3].metaPrev,string,"5,64 mil"
+2026-05,vinculacion.kpiAgregador[3].tone,string,red
+2026-05,vinculacion.kpiGateway[0].title,string,#Transacciones
+2026-05,vinculacion.kpiGateway[0].real,string,"3,34 M"
+2026-05,vinculacion.kpiGateway[0].meta,string,"4,98 M"
+2026-05,vinculacion.kpiGateway[0].cumplimiento,string,67%
+2026-05,vinculacion.kpiGateway[0].realPrev,string,"3,26 M"
+2026-05,vinculacion.kpiGateway[0].metaPrev,string,"4,45 M"
+2026-05,vinculacion.kpiGateway[0].tone,string,red
+2026-05,vinculacion.kpiGateway[1].title,string,Clientes
+2026-05,vinculacion.kpiGateway[1].real,string,"6,98 mil"
+2026-05,vinculacion.kpiGateway[1].meta,string,"7,00 mil"
+2026-05,vinculacion.kpiGateway[1].cumplimiento,string,100%
+2026-05,vinculacion.kpiGateway[1].realPrev,string,"7,05 mil"
+2026-05,vinculacion.kpiGateway[1].metaPrev,string,"6,26 mil"
+2026-05,vinculacion.kpiGateway[1].tone,string,green
+2026-05,vinculacion.kpiGateway[2].title,string,TXR promedio x cliente
+2026-05,vinculacion.kpiGateway[2].real,string,478
+2026-05,vinculacion.kpiGateway[2].meta,string,711
+2026-05,vinculacion.kpiGateway[2].cumplimiento,string,67%
+2026-05,vinculacion.kpiGateway[2].realPrev,string,462
+2026-05,vinculacion.kpiGateway[2].metaPrev,string,711
+2026-05,vinculacion.kpiGateway[2].tone,string,red
+2026-05,transaccionales.pie[0].name,string,Portafolio Movistar
+2026-05,transaccionales.pie[0].value,number,29.1
+2026-05,transaccionales.pie[0].color,string,#1967e8
+2026-05,transaccionales.pie[1].name,string,Portafolio Wom
+2026-05,transaccionales.pie[1].value,number,7.2
+2026-05,transaccionales.pie[1].color,string,#28105f
+2026-05,transaccionales.pie[2].name,string,Portafolio Davivienda
+2026-05,transaccionales.pie[2].value,number,45.0
+2026-05,transaccionales.pie[2].color,string,#ea2c20
+2026-05,transaccionales.pie[3].name,string,Portafolio General
+2026-05,transaccionales.pie[3].value,number,17.0
+2026-05,transaccionales.pie[3].color,string,#f1d554
+2026-05,transaccionales.pie[4].name,string,Portafolio especial
+2026-05,transaccionales.pie[4].value,number,1.8
+2026-05,transaccionales.pie[4].color,string,#ef7b7b
+2026-05,transaccionales.values[0][0],string,Portafolio Movistar
+2026-05,transaccionales.values[0][1],string,969.775
+2026-05,transaccionales.values[1][0],string,Portafolio Wom
+2026-05,transaccionales.values[1][1],string,239.418
+2026-05,transaccionales.values[2][0],string,Portafolio Davivienda
+2026-05,transaccionales.values[2][1],string,1.502.189
+2026-05,transaccionales.values[3][0],string,Portafolio General
+2026-05,transaccionales.values[3][1],string,566.036
+2026-05,transaccionales.values[4][0],string,Portafolio especial
+2026-05,transaccionales.values[4][1],string,60.752
+2026-05,transaccionales.total,string,3.338.170
+2026-05,transaccionales.churnAgregador.activos[0].name,string,Ene
+2026-05,transaccionales.churnAgregador.activos[0].value,number,3837
+2026-05,transaccionales.churnAgregador.activos[1].name,string,Feb
+2026-05,transaccionales.churnAgregador.activos[1].value,number,3653
+2026-05,transaccionales.churnAgregador.activos[2].name,string,Mar
+2026-05,transaccionales.churnAgregador.activos[2].value,number,3501
+2026-05,transaccionales.churnAgregador.activos[3].name,string,Abr
+2026-05,transaccionales.churnAgregador.activos[3].value,number,3524
+2026-05,transaccionales.churnAgregador.activos[4].name,string,May
+2026-05,transaccionales.churnAgregador.activos[4].value,number,3503
+2026-05,transaccionales.churnAgregador.churn[0].name,string,Ene
+2026-05,transaccionales.churnAgregador.churn[0].value,number,192
+2026-05,transaccionales.churnAgregador.churn[0].rate,string,"5,00%"
+2026-05,transaccionales.churnAgregador.churn[1].name,string,Feb
+2026-05,transaccionales.churnAgregador.churn[1].value,number,184
+2026-05,transaccionales.churnAgregador.churn[1].rate,string,"5,04%"
+2026-05,transaccionales.churnAgregador.churn[2].name,string,Mar
+2026-05,transaccionales.churnAgregador.churn[2].value,number,152
+2026-05,transaccionales.churnAgregador.churn[2].rate,string,"4,34%"
+2026-05,transaccionales.churnAgregador.churn[3].name,string,Abr
+2026-05,transaccionales.churnAgregador.churn[3].value,number,23
+2026-05,transaccionales.churnAgregador.churn[3].rate,string,"0,65%"
+2026-05,transaccionales.churnAgregador.churn[4].name,string,May
+2026-05,transaccionales.churnAgregador.churn[4].value,number,21
+2026-05,transaccionales.churnAgregador.churn[4].rate,string,"0,60%"
+2026-05,transaccionales.churnAgregador.nuevos[0].name,string,Ene
+2026-05,transaccionales.churnAgregador.nuevos[0].value,number,50
+2026-05,transaccionales.churnAgregador.nuevos[1].name,string,Feb
+2026-05,transaccionales.churnAgregador.nuevos[1].value,number,91
+2026-05,transaccionales.churnAgregador.nuevos[2].name,string,Mar
+2026-05,transaccionales.churnAgregador.nuevos[2].value,number,91
+2026-05,transaccionales.churnAgregador.nuevos[3].name,string,Abr
+2026-05,transaccionales.churnAgregador.nuevos[3].value,number,39
+2026-05,transaccionales.churnAgregador.nuevos[4].name,string,May
+2026-05,transaccionales.churnAgregador.nuevos[4].value,number,54
+2026-05,transaccionales.churnAgregador.promedioActivos,string,3.604
+2026-05,transaccionales.churnAgregador.tasaMes,string,"0,60%"
+2026-05,transaccionales.churnAgregador.promedioChurn,string,114
+2026-05,transaccionales.churnAgregador.promedioNuevos,string,65
+2026-05,transaccionales.churnGateway.activos[0].name,string,Ene
+2026-05,transaccionales.churnGateway.activos[0].value,number,7339
+2026-05,transaccionales.churnGateway.activos[1].name,string,Feb
+2026-05,transaccionales.churnGateway.activos[1].value,number,7412
+2026-05,transaccionales.churnGateway.activos[2].name,string,Mar
+2026-05,transaccionales.churnGateway.activos[2].value,number,7556
+2026-05,transaccionales.churnGateway.activos[3].name,string,Abr
+2026-05,transaccionales.churnGateway.activos[3].value,number,7846
+2026-05,transaccionales.churnGateway.churn[0].name,string,Ene
+2026-05,transaccionales.churnGateway.churn[0].value,number,145
+2026-05,transaccionales.churnGateway.churn[0].rate,string,"1,98%"
+2026-05,transaccionales.churnGateway.churn[1].name,string,Feb
+2026-05,transaccionales.churnGateway.churn[1].value,number,73
+2026-05,transaccionales.churnGateway.churn[1].rate,string,"0,98%"
+2026-05,transaccionales.churnGateway.churn[2].name,string,Mar
+2026-05,transaccionales.churnGateway.churn[2].value,number,144
+2026-05,transaccionales.churnGateway.churn[2].rate,string,"1,91%"
+2026-05,transaccionales.churnGateway.churn[3].name,string,Abr
+2026-05,transaccionales.churnGateway.churn[3].value,number,290
+2026-05,transaccionales.churnGateway.churn[3].rate,string,"3,70%"
+2026-05,transaccionales.churnGateway.nuevos[0].name,string,Ene
+2026-05,transaccionales.churnGateway.nuevos[0].value,number,120
+2026-05,transaccionales.churnGateway.nuevos[1].name,string,Feb
+2026-05,transaccionales.churnGateway.nuevos[1].value,number,343
+2026-05,transaccionales.churnGateway.nuevos[2].name,string,Mar
+2026-05,transaccionales.churnGateway.nuevos[2].value,number,267
+2026-05,transaccionales.churnGateway.promedioActivos,string,7.538
+2026-05,transaccionales.churnGateway.tasaMes,string,"3,70%"
+2026-05,transaccionales.churnGateway.promedioChurn,string,163
+2026-05,transaccionales.churnGateway.promedioNuevos,string,243
+2026-05,nps.metas[0].title,string,Meta NPS
+2026-05,nps.metas[0].value,string,90
+2026-05,nps.metas[0].color,string,#ef5a5a
+2026-05,nps.metas[1].title,string,Meta SSA
+2026-05,nps.metas[1].value,string,90
+2026-05,nps.metas[1].color,string,#15516f
+2026-05,nps.metas[2].title,string,Meta TEP
+2026-05,nps.metas[2].value,string,10min
+2026-05,nps.metas[2].color,string,#20a751
+2026-05,nps.metas[3].title,string,Meta TDP
+2026-05,nps.metas[3].value,string,4h
+2026-05,nps.metas[3].color,string,#f1a10a
+2026-05,nps.months[0].month,string,Mayo
+2026-05,nps.months[0].code,string,2026-5
+2026-05,nps.months[0].insight,string,NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.
+2026-05,nps.months[0].metrics[0].label,string,NPS
+2026-05,nps.months[0].metrics[0].value,string,"59,8"
+2026-05,nps.months[0].metrics[0].trend,string,↑
+2026-05,nps.months[0].metrics[0].trendTone,string,up
+2026-05,nps.months[0].metrics[0].progress,number,66
+2026-05,nps.months[0].metrics[0].color,string,#ef5a5a
+2026-05,nps.months[0].metrics[1].label,string,SSA
+2026-05,nps.months[0].metrics[1].value,string,"68,9"
+2026-05,nps.months[0].metrics[1].trend,string,↑
+2026-05,nps.months[0].metrics[1].trendTone,string,up
+2026-05,nps.months[0].metrics[1].progress,number,77
+2026-05,nps.months[0].metrics[1].color,string,#15516f
+2026-05,nps.months[0].metrics[2].label,string,TEP
+2026-05,nps.months[0].metrics[2].value,string,"3,9min"
+2026-05,nps.months[0].metrics[2].trend,string,↑
+2026-05,nps.months[0].metrics[2].trendTone,string,down
+2026-05,nps.months[0].metrics[2].progress,number,256
+2026-05,nps.months[0].metrics[2].color,string,#20a751
+2026-05,nps.months[0].metrics[3].label,string,TDP
+2026-05,nps.months[0].metrics[3].value,string,"48,0h"
+2026-05,nps.months[0].metrics[3].trend,string,↑
+2026-05,nps.months[0].metrics[3].trendTone,string,down
+2026-05,nps.months[0].metrics[3].progress,number,8
+2026-05,nps.months[0].metrics[3].color,string,#f1a10a
+2026-05,nps.months[1].month,string,Mayo
+2026-05,nps.months[1].code,string,2026-5
+2026-05,nps.months[1].insight,string,NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.
+2026-05,nps.months[1].metrics[0].label,string,NPS
+2026-05,nps.months[1].metrics[0].value,string,"59,8"
+2026-05,nps.months[1].metrics[0].trend,string,↑
+2026-05,nps.months[1].metrics[0].trendTone,string,up
+2026-05,nps.months[1].metrics[0].progress,number,66
+2026-05,nps.months[1].metrics[0].color,string,#ef5a5a
+2026-05,nps.months[1].metrics[1].label,string,SSA
+2026-05,nps.months[1].metrics[1].value,string,"68,9"
+2026-05,nps.months[1].metrics[1].trend,string,↑
+2026-05,nps.months[1].metrics[1].trendTone,string,up
+2026-05,nps.months[1].metrics[1].progress,number,77
+2026-05,nps.months[1].metrics[1].color,string,#15516f
+2026-05,nps.months[1].metrics[2].label,string,TEP
+2026-05,nps.months[1].metrics[2].value,string,"3,9min"
+2026-05,nps.months[1].metrics[2].trend,string,↑
+2026-05,nps.months[1].metrics[2].trendTone,string,down
+2026-05,nps.months[1].metrics[2].progress,number,256
+2026-05,nps.months[1].metrics[2].color,string,#20a751
+2026-05,nps.months[1].metrics[3].label,string,TDP
+2026-05,nps.months[1].metrics[3].value,string,"48,0h"
+2026-05,nps.months[1].metrics[3].trend,string,↑
+2026-05,nps.months[1].metrics[3].trendTone,string,down
+2026-05,nps.months[1].metrics[3].progress,number,8
+2026-05,nps.months[1].metrics[3].color,string,#f1a10a
+2026-05,nps.glossary[0].dot,string,#ff1d25
+2026-05,nps.glossary[0].title,string,NPS
+2026-05,nps.glossary[0].text,string,Net Promoter Score. Mide qué tan dispuestos están los usuarios a recomendar el servicio.
+2026-05,nps.glossary[1].dot,string,#ff7b7b
+2026-05,nps.glossary[1].title,string,% Cumplimiento NPS
+2026-05,nps.glossary[1].text,string,Porcentaje de avance frente a la meta definida para NPS.
+2026-05,nps.glossary[2].dot,string,#15516f
+2026-05,nps.glossary[2].title,string,SSA
+2026-05,nps.glossary[2].text,string,Satisfacción del servicio. Refleja el nivel de satisfacción reportado por los usuarios.
+2026-05,nps.glossary[3].dot,string,#69a8ff
+2026-05,nps.glossary[3].title,string,% Cumplimiento SSA
+2026-05,nps.glossary[3].text,string,Porcentaje de avance frente a la meta definida para SSA.
+2026-05,nps.glossary[4].dot,string,#20a751
+2026-05,nps.glossary[4].title,string,TEP
+2026-05,nps.glossary[4].text,string,Tiempo de Espera Promedio.
+2026-05,nps.glossary[5].dot,string,#f1a10a
+2026-05,nps.glossary[5].title,string,TDP
+2026-05,nps.glossary[5].text,string,Tiempo de Duración Promedio.
