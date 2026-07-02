@@ -360,31 +360,31 @@ def update_churn(period, wb):
 def update_nps(period, wb, month):
     rows = all_rows(sheet(wb, "NPS"))
     headers = [str(value) if value is not None else "" for value in rows[3]]
-    col = headers.index(f"2026-{month}")
-    prev_col = headers.index(f"2026-{month - 1}")
     values = {row[0]: row for row in rows if row and row[0]}
 
-    def metric(cump_label, value_label, color, suffix="", reverse=False):
-        value = values[value_label][col]
-        prev = values[value_label][prev_col]
-        trend = "↓" if is_number(prev) and is_number(value) and value < prev else "↑"
-        tone = "down" if trend == "↓" else "up"
-        if reverse:
-            tone = "up" if trend == "↓" else "down"
-        return {
-            "label": value_label.replace("Tiempo Espera Promedio (", "").replace("Tiempo Duración Promedio (", "").replace(")", ""),
-            "value": (f"{value:.1f}{suffix}" if is_number(value) else str(value)).replace(".", ","),
-            "trend": trend,
-            "trendTone": tone,
-            "progress": int(round((values[cump_label][col] or 0) * 100)),
-            "color": color,
-        }
+    def build_month(target_month):
+        col = headers.index(f"2026-{target_month}")
+        prev_col = headers.index(f"2026-{target_month - 1}") if target_month > 1 else None
 
-    period["nps"]["months"] = [
-        period["nps"]["months"][-1],
-        {
-            "month": MONTHS[month][1],
-            "code": f"2026-{month}",
+        def metric(cump_label, value_label, color, suffix="", reverse=False):
+            value = values[value_label][col]
+            prev = values[value_label][prev_col] if prev_col is not None else None
+            trend = "↓" if is_number(prev) and is_number(value) and value < prev else "↑"
+            tone = "down" if trend == "↓" else "up"
+            if reverse:
+                tone = "up" if trend == "↓" else "down"
+            return {
+                "label": value_label.replace("Tiempo Espera Promedio (", "").replace("Tiempo Duración Promedio (", "").replace(")", ""),
+                "value": (f"{value:.1f}{suffix}" if is_number(value) else str(value)).replace(".", ","),
+                "trend": trend,
+                "trendTone": tone,
+                "progress": int(round((values[cump_label][col] or 0) * 100)),
+                "color": color,
+            }
+
+        return {
+            "month": MONTHS[target_month][1],
+            "code": f"2026-{target_month}",
             "insight": "NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.",
             "metrics": [
                 metric("% Cumplimiento NPS", "NPS", "#ef5a5a"),
@@ -392,8 +392,9 @@ def update_nps(period, wb, month):
                 metric("% Cumplimiento TEP", "Tiempo Espera Promedio (TEP)", "#20a751", "min", True),
                 metric("% Cumplimiento TDP", "Tiempo Duración Promedio (TDP)", "#f1a10a", "h", True),
             ],
-        },
-    ]
+        }
+
+    period["nps"]["months"] = [build_month(month - 1), build_month(month)]
 
 
 def update_vinculacion(period, wb, month):

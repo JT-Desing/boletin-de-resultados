@@ -1895,40 +1895,40 @@
       ],
       "months": [
         {
-          "month": "Abril",
-          "code": "2026-4",
+          "month": "Marzo",
+          "code": "2026-3",
           "insight": "NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.",
           "metrics": [
             {
               "label": "NPS",
-              "value": "52,1",
-              "trend": "↓",
-              "trendTone": "down",
-              "progress": 58,
+              "value": "56,5",
+              "trend": "↑",
+              "trendTone": "up",
+              "progress": 63,
               "color": "#ef5a5a"
             },
             {
               "label": "SSA",
-              "value": "57,3",
-              "trend": "↓",
-              "trendTone": "down",
-              "progress": 64,
+              "value": "62,5",
+              "trend": "↑",
+              "trendTone": "up",
+              "progress": 69,
               "color": "#15516f"
             },
             {
               "label": "TEP",
-              "value": "2,9min",
-              "trend": "↓",
-              "trendTone": "up",
-              "progress": 345,
+              "value": "6,3min",
+              "trend": "↑",
+              "trendTone": "down",
+              "progress": 159,
               "color": "#20a751"
             },
             {
               "label": "TDP",
-              "value": "38,4h",
+              "value": "24,0h",
               "trend": "↑",
               "trendTone": "down",
-              "progress": 10,
+              "progress": 17,
               "color": "#f1a10a"
             }
           ]
@@ -2405,12 +2405,12 @@
         },
         {
           "name": "Portafolio Davivienda",
-          "value": 45,
+          "value": 45.0,
           "color": "#ea2c20"
         },
         {
           "name": "Portafolio General",
-          "value": 17,
+          "value": 17.0,
           "color": "#f1d554"
         },
         {
@@ -2622,40 +2622,40 @@
       ],
       "months": [
         {
-          "month": "Mayo",
-          "code": "2026-5",
+          "month": "Abril",
+          "code": "2026-4",
           "insight": "NPS y SSA mejoran frente al mes anterior. TEP se mantiene por encima de la meta; TDP continúa como el principal punto de atención.",
           "metrics": [
             {
               "label": "NPS",
-              "value": "59,8",
-              "trend": "↑",
-              "trendTone": "up",
-              "progress": 66,
+              "value": "52,1",
+              "trend": "↓",
+              "trendTone": "down",
+              "progress": 58,
               "color": "#ef5a5a"
             },
             {
               "label": "SSA",
-              "value": "68,9",
-              "trend": "↑",
-              "trendTone": "up",
-              "progress": 77,
+              "value": "57,3",
+              "trend": "↓",
+              "trendTone": "down",
+              "progress": 64,
               "color": "#15516f"
             },
             {
               "label": "TEP",
-              "value": "3,9min",
-              "trend": "↑",
-              "trendTone": "down",
-              "progress": 256,
+              "value": "2,9min",
+              "trend": "↓",
+              "trendTone": "up",
+              "progress": 345,
               "color": "#20a751"
             },
             {
               "label": "TDP",
-              "value": "48,0h",
+              "value": "38,4h",
               "trend": "↑",
               "trendTone": "down",
-              "progress": 8,
+              "progress": 10,
               "color": "#f1a10a"
             }
           ]
