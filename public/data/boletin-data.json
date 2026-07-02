@@ -1809,6 +1809,10 @@
           {
             "name": "Abr",
             "value": 7846
+          },
+          {
+            "name": "May",
+            "value": 7774
           }
         ],
         "churn": [
@@ -1831,6 +1835,11 @@
             "name": "Abr",
             "value": 290,
             "rate": "3,70%"
+          },
+          {
+            "name": "May",
+            "value": 72,
+            "rate": "0,93%"
           }
         ],
         "nuevos": [
@@ -1845,12 +1854,20 @@
           {
             "name": "Mar",
             "value": 267
+          },
+          {
+            "name": "Abr",
+            "value": 228
+          },
+          {
+            "name": "May",
+            "value": 98
           }
         ],
-        "promedioActivos": "7.538",
-        "tasaMes": "3,70%",
-        "promedioChurn": "163",
-        "promedioNuevos": "243"
+        "promedioActivos": "7.585",
+        "tasaMes": "0,93%",
+        "promedioChurn": "145",
+        "promedioNuevos": "211"
       }
     },
     "nps": {
@@ -2519,6 +2536,10 @@
           {
             "name": "Abr",
             "value": 7846
+          },
+          {
+            "name": "May",
+            "value": 7774
           }
         ],
         "churn": [
@@ -2541,6 +2562,11 @@
             "name": "Abr",
             "value": 290,
             "rate": "3,70%"
+          },
+          {
+            "name": "May",
+            "value": 72,
+            "rate": "0,93%"
           }
         ],
         "nuevos": [
@@ -2555,12 +2581,20 @@
           {
             "name": "Mar",
             "value": 267
+          },
+          {
+            "name": "Abr",
+            "value": 228
+          },
+          {
+            "name": "May",
+            "value": 98
           }
         ],
-        "promedioActivos": "7.538",
-        "tasaMes": "3,70%",
-        "promedioChurn": "163",
-        "promedioNuevos": "243"
+        "promedioActivos": "7.585",
+        "tasaMes": "0,93%",
+        "promedioChurn": "145",
+        "promedioNuevos": "211"
       }
     },
     "nps": {

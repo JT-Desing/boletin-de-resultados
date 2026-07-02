@@ -318,27 +318,43 @@ def update_transaccionales(period, wb, month):
 
 def update_churn(period, wb):
     ws = sheet(wb, "Churn")
-    by_month = {}
+    by_month_agregador = {}
+    by_month_gateway = {}
     for row in ws.iter_rows(values_only=True):
         row = list(row)
         if len(row) > 12 and row[8] in {"Ene", "Feb", "Mar", "Abr", "May"}:
-            by_month[row[8]] = row
-    activos, churn, nuevos = [], [], []
-    for name in ["Ene", "Feb", "Mar", "Abr", "May"]:
-        row = by_month.get(name)
-        if not row:
-            continue
-        activos.append({"name": name, "value": int(row[9])})
-        nuevos.append({"name": name, "value": int(row[10])})
-        churn.append({"name": name, "value": int(row[11]), "rate": percent(row[12], decimals=2)})
-    dataset = period["transaccionales"]["churnAgregador"]
-    dataset["activos"] = activos
-    dataset["nuevos"] = nuevos
-    dataset["churn"] = churn
-    dataset["promedioActivos"] = integer(sum(item["value"] for item in activos) / len(activos))
-    dataset["promedioNuevos"] = integer(sum(item["value"] for item in nuevos) / len(nuevos))
-    dataset["promedioChurn"] = integer(sum(item["value"] for item in churn) / len(churn))
-    dataset["tasaMes"] = churn[-1]["rate"]
+            by_month_agregador[row[8]] = row
+        if len(row) > 19 and row[15] in {"Ene", "Feb", "Mar", "Abr", "May"}:
+            by_month_gateway[row[15]] = row
+
+    def apply_dataset(dataset, source, offsets):
+        activos, churn, nuevos = [], [], []
+        month_col, activos_col, nuevos_col, churn_col, rate_col = offsets
+        for name in ["Ene", "Feb", "Mar", "Abr", "May"]:
+            row = source.get(name)
+            if not row or not is_number(row[activos_col]):
+                continue
+            activos.append({"name": row[month_col], "value": int(row[activos_col])})
+            nuevos.append({"name": row[month_col], "value": int(row[nuevos_col])})
+            churn.append(
+                {
+                    "name": row[month_col],
+                    "value": int(row[churn_col]),
+                    "rate": percent(row[rate_col], decimals=2),
+                }
+            )
+        if not activos:
+            return
+        dataset["activos"] = activos
+        dataset["nuevos"] = nuevos
+        dataset["churn"] = churn
+        dataset["promedioActivos"] = integer(sum(item["value"] for item in activos) / len(activos))
+        dataset["promedioNuevos"] = integer(sum(item["value"] for item in nuevos) / len(nuevos))
+        dataset["promedioChurn"] = integer(sum(item["value"] for item in churn) / len(churn))
+        dataset["tasaMes"] = churn[-1]["rate"]
+
+    apply_dataset(period["transaccionales"]["churnAgregador"], by_month_agregador, (8, 9, 10, 11, 12))
+    apply_dataset(period["transaccionales"]["churnGateway"], by_month_gateway, (15, 16, 17, 18, 19))
 
 
 def update_nps(period, wb, month):

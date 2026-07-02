@@ -1613,6 +1613,7 @@ function ChartPointDot({
   showRate?: boolean;
 }) {
   if (typeof cx !== "number" || typeof cy !== "number") return null;
+  const rateBadgeY = cy > 188 ? cy - 58 : cy + 14;
   return (
     <g style={{ pointerEvents: "none" }}>
       <circle
@@ -1634,7 +1635,7 @@ function ChartPointDot({
         {Number(value).toLocaleString("es-CO")}
       </text>
       {showRate && payload?.rate ? (
-        <g transform={`translate(${cx - 40}, ${cy + 14})`}>
+        <g transform={`translate(${cx - 40}, ${rateBadgeY})`}>
           <rect width="80" height="36" rx="9" fill="#ffffff" stroke="#d6d6d6" />
           <text
             x="40"
@@ -1675,7 +1676,7 @@ function ChurnLine({ title, color, data, showRate = false }) {
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
-            margin={{ top: 38, right: 34, left: 22, bottom: 20 }}
+            margin={{ top: 42, right: 34, left: 22, bottom: 34 }}
           >
             <CartesianGrid
               vertical={false}
@@ -1687,6 +1688,7 @@ function ChurnLine({ title, color, data, showRate = false }) {
               tick={{ fontSize: 16, fill: "#333" }}
               axisLine={false}
               tickLine={false}
+              dy={10}
               padding={{ left: 28, right: 28 }}
             />
             <YAxis
